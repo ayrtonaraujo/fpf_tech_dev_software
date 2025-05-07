@@ -1,0 +1,6 @@
+AYRTON DENNER MARINHO DE ARAÚJO
+
+b, a, c, a, d,
+d, d, a, b, a,
+c, a, c, a, d,
+c, b, d, d, a
