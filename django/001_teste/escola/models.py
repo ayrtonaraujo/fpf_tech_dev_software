@@ -1,28 +1,32 @@
-from cffi import model
 from django.db import models
 
 
 class ModelBase(models.Model):
     id = models.BigAutoField(
-        db_column = 'id',
-        null = False,
-        primary_key = True
-    )
+        db_column='id',
+        null=False,
+        primary_key=True
+        )
+
     created_at = models.DateTimeField(
-        db_column = 'created_at',
+        db_column='dt_created',
         auto_now_add=True,
-        null = True
-    )
-    updated_at = models.DateTimeField(
-        db_column = 'updated_at',
+        null=True
+        )
+
+    modified_at = models.DateTimeField(
+        db_column='dt_modified',
         auto_now=True,
-        null = True
-    )
+        null=True
+        )
+
     active = models.BooleanField(
-        db_column = 'active',
-        null = False,
+        db_column='cs_active',
+        null=False,
         default=True
-    )
+        )
+
+
     class Meta:
         abstract = True
         managed = True
@@ -30,70 +34,80 @@ class ModelBase(models.Model):
 
 class Client(ModelBase):
     name = models.CharField(
-        db_column = 'name',
-        max_length = 70,
-        null = False,
-    )
+        db_column='tx_nome',
+        max_length=70,
+        null=False
+        )
+
     age = models.IntegerField(
-        db_column = 'age',
-        null = False
-    )
+        db_column='nb_idade',
+        null=False
+        )
+
     rg = models.CharField(
-        db_column = 'rg',
-        max_length = 12,
-        null = False
-    )
+        db_column='tx_rg',
+        max_length=12,
+        null=False
+        )
+
     cpf = models.CharField(
-        db_column = 'cpf',
-        max_length = 12,
-        null = False
-    )
+        db_column='tx_cpf',
+        max_length=12,
+        null=False
+        )
 
 
 class Product(ModelBase):
     description = models.TextField(
-        db_column = 'description',
-        null = False
-    )
+        db_column='description',
+        null=False
+        )
+
     quantity = models.IntegerField(
-        db_column = 'quantity',
-        null = False,
-        default = 0
-    )
+        db_column='quantity',
+        null=False,
+        default=0
+        )
 
 
 class Employee(ModelBase):
     name = models.CharField(
-        db_column = 'name',
-        max_length = 70,
-        null = False
-    )
-    registraction = models.CharField(
-        db_column = 'registration',
-        null = False,
-        max_length = 15
-    )
+        db_column='tx_nome',
+        max_length=70,
+        null=False
+        )
 
-class Sale (ModelBase):
-    number_nf = models.CharField(
-        max_length = 255,
-        null = False,
-    )
-    client = model.ForeignKey(
-        Client,
-        db_column = 'id_client',
-        null = False,
-        on_delete = models.DO_NOTHING
-    )
-    product = model.ForeignKey(
+    registration = models.CharField(
+        db_column='tx_registro',
+        max_length=15,
+        null=False
+        )
+
+
+class Sale(ModelBase):
+    product = models.ForeignKey(
         Product,
-        db_column = 'id_product',
-        null = False,
-        on_delete = models.DO_NOTHING
-    )
+        db_column='id_product',
+        null=False,
+        on_delete=models.DO_NOTHING
+        )
+
+    client = models.ForeignKey(
+        Client,
+        db_column='id_client',
+        null=False,
+        on_delete=models.DO_NOTHING
+        )
+
     employee = models.ForeignKey(
         Employee,
-        db_column = 'id_employee',
-        null = False,
-        on_delete = models.DO_NOTHING
-    )
+        db_column='id_employee',
+        null=False,
+        on_delete=models.DO_NOTHING
+        )
+
+    nrf = models.CharField(
+        db_column='tx_nrf',
+        max_length=255,
+        null=False
+        )
