@@ -26,7 +26,6 @@ class ModelBase(models.Model):
         default=True
         )
 
-
     class Meta:
         abstract = True
         managed = True

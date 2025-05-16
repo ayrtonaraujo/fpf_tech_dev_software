@@ -1,6 +1,7 @@
 from rest_framework import serializers
 from escola.models import Client, Product, Employee, Sale
 
+
 class ClientSerializer(serializers.ModelSerializer):
     age = serializers.IntegerField(min_value=18, max_value=100)
 

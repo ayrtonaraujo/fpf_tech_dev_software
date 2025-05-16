@@ -1,0 +1,21 @@
+INSERT INTO escola_client (id, tx_nome, nb_idade, tx_rg, tx_cpf, dt_created, dt_modified, cs_active)
+VALUES
+  (1, 'João da Silva', 35, 'MG1234567', '12345678901', NOW(), NOW(), TRUE),
+  (2, 'Maria Oliveira', 28, 'SP7654321', '98765432100', NOW(), NOW(), TRUE);
+
+INSERT INTO escola_product (id, description, quantity, dt_created, dt_modified, cs_active)
+VALUES
+  (1, 'Notebook Dell Inspiron 15"', 10, NOW(), NOW(), TRUE),
+  (2, 'Teclado Mecânico RGB', 25, NOW(), NOW(), TRUE);
+
+
+INSERT INTO escola_employee (id, tx_nome, tx_registro, dt_created, dt_modified, cs_active)
+VALUES
+  (1, 'Carlos Mendes', 'EMP001', NOW(), NOW(), TRUE),
+  (2, 'Ana Souza', 'EMP002', NOW(), NOW(), TRUE);
+
+
+INSERT INTO escola_sale (id, id_product, id_client, id_employee, tx_nrf, dt_created, dt_modified, cs_active)
+VALUES
+  (1, 1, 1, 1, 'NRF123456', NOW(), NOW(), TRUE),
+  (2, 2, 2, 2, 'NRF654321', NOW(), NOW(), TRUE);
