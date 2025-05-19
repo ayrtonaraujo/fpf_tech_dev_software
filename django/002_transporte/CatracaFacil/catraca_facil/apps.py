@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class TransporteUrbanoConfig(AppConfig):
+class CatracaFacilConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'transporte_urbano'
+    name = 'catraca_facil'
