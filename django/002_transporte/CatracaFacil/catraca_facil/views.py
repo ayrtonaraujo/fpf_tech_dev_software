@@ -30,11 +30,11 @@ class RechargeViewSet(viewsets.ModelViewSet):
     serializer_class = RechargeSerializer
     permission_classes = [permissions.IsAuthenticated]
     filter_backends = [DjangoFilterBackend]
-    filterset_class = Recharge
+    filterset_class = RechargeFilter
 
 class UseCardViewSet(viewsets.ModelViewSet):
     queryset = UseCard.objects.all()
     serializer_class = UseCardSerializer
     permission_classes = [permissions.IsAuthenticated]
     filter_backends = [DjangoFilterBackend]
-    filterset_class = UseCard
+    filterset_class = UseCardFilter

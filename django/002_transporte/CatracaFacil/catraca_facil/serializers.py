@@ -46,14 +46,12 @@ class UseCardSerializer(serializers.ModelSerializer):
     card = CardSerializer(read_only=True)
     card_id = serializers.PrimaryKeyRelatedField(queryset=Card.objects.all(),
                                                  source='card',
-                                                 write_only=True
-    )
+                                                 write_only=True)
     bus = BusSerializer(read_only=True)
     bus_id = serializers.PrimaryKeyRelatedField(queryset=Bus.objects.all(),
                                                 source='bus',
-                                                write_only=True
-    )
+                                                write_only=True)
 
     class Meta:
-        model = Card
+        model = UseCard
         fields = '__all__'
