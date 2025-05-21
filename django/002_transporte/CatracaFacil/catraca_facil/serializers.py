@@ -15,7 +15,7 @@ class PassengerSerializer(serializers.ModelSerializer):
 class CardSerializer(serializers.ModelSerializer):
 
     passenger = PassengerSerializer(read_only=True)
-    passenger_id = serializers.IntegerField(queryset=Passenger.objects.all().values_list(),
+    passenger_id = serializers.PrimaryKeyRelatedField(queryset=Passenger.objects.all(),
                                             source='passenger',
                                             write_only=True
     )
@@ -33,9 +33,9 @@ class BusSerializer(serializers.ModelSerializer):
 
 class RechargeSerializer(serializers.ModelSerializer):
     card = CardSerializer(read_only=True)
-    card_id = serializers.IntegerField(queryset=Card.objects.all().values_list(),
-                                       source='card',
-                                       write_only=True)
+    card_id = serializers.PrimaryKeyRelatedField(queryset=Card.objects.all(),
+                                                source='card',
+                                                write_only=True)
 
     class Meta:
         model = Recharge
@@ -44,14 +44,14 @@ class RechargeSerializer(serializers.ModelSerializer):
 
 class UseCardSerializer(serializers.ModelSerializer):
     card = CardSerializer(read_only=True)
-    card_id = serializers.IntegerField(queryset=Card.objects.all().values_list(),
-                                       source='card',
-                                       write_only=True
+    card_id = serializers.PrimaryKeyRelatedField(queryset=Card.objects.all(),
+                                                 source='card',
+                                                 write_only=True
     )
     bus = BusSerializer(read_only=True)
-    bus_id = serializers.IntegerField(queryset=Bus.objects.all().values_list(),
-                                      source='bus',
-                                      write_only=True
+    bus_id = serializers.PrimaryKeyRelatedField(queryset=Bus.objects.all(),
+                                                source='bus',
+                                                write_only=True
     )
 
     class Meta:

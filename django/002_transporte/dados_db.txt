@@ -1,0 +1,44 @@
+-- Inserir dados na tabela Passenger
+INSERT INTO catraca_facil_passenger (name, age, cpf, balance, created_at, modified_at, active)
+VALUES
+('João Silva', 25, '12345678901', 10000, '2025-05-01 10:00:00', '2025-05-01 10:00:00', TRUE),
+('Maria Souza', 32, '23456789012', 15000, '2025-05-02 12:30:00', '2025-05-02 12:30:00', TRUE),
+('Carlos Lima', 19, '34567890123', 2000, '2025-05-03 09:15:00', '2025-05-03 09:15:00', TRUE),
+('Ana Pereira', 40, '45678901234', 50000, '2025-05-04 11:45:00', '2025-05-04 11:45:00', TRUE),
+('Lucas Rocha', 28, '56789012345', 7500, '2025-05-05 14:00:00', '2025-05-05 14:00:00', TRUE);
+
+-- Inserir dados na tabela Card
+INSERT INTO catraca_facil_card (card_number, date_issue, date_expiration, passenger, created_at, modified_at, active)
+VALUES
+('CARD0001', '2025-05-01', '2028-05-01', 1, '2025-05-01 10:00:00', '2025-05-01 10:00:00', TRUE),
+('CARD0002', '2025-05-02', '2028-05-02', 2, '2025-05-02 12:30:00', '2025-05-02 12:30:00', TRUE),
+('CARD0003', '2025-05-03', '2028-05-03', 3, '2025-05-03 09:15:00', '2025-05-03 09:15:00', TRUE),
+('CARD0004', '2025-05-04', '2028-05-04', 4, '2025-05-04 11:45:00', '2025-05-04 11:45:00', TRUE),
+('CARD0005', '2025-05-05', '2028-05-05', 5, '2025-05-05 14:00:00', '2025-05-05 14:00:00', TRUE);
+
+-- Inserir dados na tabela Bus
+INSERT INTO catraca_facil_bus (number, company, created_at, modified_at, active)
+VALUES
+('BUS1001', 'Transporte ABC', '2025-05-01 10:00:00', '2025-05-01 10:00:00', TRUE),
+('BUS1002', 'Cidade Verde', '2025-05-02 12:30:00', '2025-05-02 12:30:00', TRUE),
+('BUS1003', 'Via Norte', '2025-05-03 09:15:00', '2025-05-03 09:15:00', TRUE),
+('BUS1004', 'Expresso Sul', '2025-05-04 11:45:00', '2025-05-04 11:45:00', TRUE),
+('BUS1005', 'Leste Oeste', '2025-05-05 14:00:00', '2025-05-05 14:00:00', TRUE);
+
+-- Inserir dados na tabela Recharge
+INSERT INTO catraca_facil_recharge (value, date_recharge, payment_method, card, created_at, modified_at, active)
+VALUES
+(5000, '2025-05-01 10:00:00', 'pix', 1, '2025-05-01 10:00:00', '2025-05-01 10:00:00', TRUE),
+(10000, '2025-05-02 12:30:00', 'dinheiro', 2, '2025-05-02 12:30:00', '2025-05-02 12:30:00', TRUE),
+(7500, '2025-05-03 09:15:00', 'cartão', 3, '2025-05-03 09:15:00', '2025-05-03 09:15:00', TRUE),
+(20000, '2025-05-04 11:45:00', 'pix', 4, '2025-05-04 11:45:00', '2025-05-04 11:45:00', TRUE),
+(1500, '2025-05-05 14:00:00', 'dinheiro', 5, '2025-05-05 14:00:00', '2025-05-05 14:00:00', TRUE);
+
+-- Inserir dados na tabela UseCard
+INSERT INTO catraca_facil_usecard (used_value, date_used, onboard_local, card, bus, created_at, modified_at, active)
+VALUES
+(500, '2025-05-01 10:00:00', 'Terminal Central', 1, 1, '2025-05-01 10:00:00', '2025-05-01 10:00:00', TRUE),
+(750, '2025-05-02 12:30:00', 'Av. Paulista', 2, 2, '2025-05-02 12:30:00', '2025-05-02 12:30:00', TRUE),
+(1000, '2025-05-03 09:15:00', 'Estação Norte', 3, 3, '2025-05-03 09:15:00', '2025-05-03 09:15:00', TRUE),
+(600, '2025-05-04 11:45:00', 'Rodoviária', 4, 4, '2025-05-04 11:45:00', '2025-05-04 11:45:00', TRUE),
+(450, '2025-05-05 14:00:00', 'Praça da Sé', 5, 5, '2025-05-05 14:00:00', '2025-05-05 14:00:00', TRUE);

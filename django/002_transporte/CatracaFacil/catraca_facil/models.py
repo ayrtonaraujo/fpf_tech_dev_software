@@ -54,6 +54,9 @@ class Passenger(ModelBase):
         default = 0
     )
 
+    def __str__(self):
+        return f"{self.id} - {self.name} - {self.cpf}"
+
 
 class Card (ModelBase):
     card_number = models.CharField(
@@ -79,6 +82,9 @@ class Card (ModelBase):
         on_delete = models.DO_NOTHING
     )
 
+    def __str__(self):
+        return f"{self.id} - {self.card_number}"
+
 
 class Bus(ModelBase):
     number = models.CharField(
@@ -92,6 +98,9 @@ class Bus(ModelBase):
         max_length = 30,
         null = False
     )
+
+    def __str__(self):
+        return f"{self.id} - {self.number}"
 
 
 class Recharge(ModelBase):
@@ -127,6 +136,9 @@ class Recharge(ModelBase):
         on_delete = models.DO_NOTHING
     )
 
+    def __str__(self):
+        return f"{self.id} - {self.card} - {self.date_recharge}"
+
 
 class UseCard (ModelBase):
     used_value = models.BigIntegerField(
@@ -159,3 +171,6 @@ class UseCard (ModelBase):
         null = False,
         on_delete = models.DO_NOTHING
     )
+
+    def __str__(self):
+        return f"{self.id} - {self.card} - {self.date_used}"
