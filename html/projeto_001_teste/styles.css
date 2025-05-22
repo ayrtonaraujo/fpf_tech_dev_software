@@ -1,0 +1,60 @@
+h1, h2 {
+    color: chartreuse;;
+}
+
+h2 {
+    padding-top: 1em;
+    
+}
+
+body {
+    background-color: rgb(15, 15, 15);
+    color: whitesmoke;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    /* border: 3px solid rgb(255, 255, 255); */
+    padding: 3em;
+    
+}
+
+a {
+    color: chartreuse;
+}
+
+a:visited {
+    color: forestgreen;
+}
+
+img {
+    width: 300px;
+    border-width: 3px;
+    border-color: aliceblue;
+    border-style: dotted;    
+    border-radius: 1em;
+}
+
+#formulario-contato {
+    display: grid;
+    
+}
+
+#formulario-contato label {
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+}
+
+.navbar ol {
+    display: flex;
+    padding-right: 1em;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    border-radius: 1em;
+    border: 2px dotted ;
+}
+
+.navbar ol li{
+    padding-right: 3em;
+    
+}

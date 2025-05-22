@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="/styles.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+    <title>Exemplo</title>
+</head>
+
+
+<body>
+    <header>
+        <h1>Exemplo HTML</h1>
+        <nav class="navbar">
+            <ol>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ol>
+        </nav>
+    </header>
+
+
+    <main>
+        <section id="sobre">
+            <h2>Sobre</h2>        
+        <p>Essa é uma página de exemplo de HTML. Apenas para aprendizado e aplicação no curso de desenvolvimento de sistemas da FPFTech.</p>
+        <img src="/img/bebe.gif" alt="HTML.">
+        </section>
+        
+    
+        <section id="servicos">
+            <h2>Serviços</h2>
+            <p>Esses são os serviços oferecidos na nossa página de exemplo:</p>
+            <ul>
+                <li>Criação de sites</li>
+                <li>Criaçao de aplicações web</li></i>
+                <li>Criação de site Wordpress</li>
+            </ul>
+        </section>
+
+    
+        <section id="contato">
+            <h2>Contato</h2>
+    
+            <form id="formulario-contato">
+                <label for="nome">Nome: </label>
+                <input type="text" id="nome" name="nome" placeholder="Digite o seu nome."required/>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Digite o seu email." required/>
+
+                <label for="assunto">Assunto:</label>
+        <!-- "combobox" -->
+                <select id="assunto" name='assunto' required>
+                    <option value="" disabled selected>Escolha um assunto</option>
+                     <option value="orcamento">Orçamento</option>
+                    <option value="suporte">Suporte Técnico</option>
+                    <option value="parceria">Parceria</option>
+                    <option value="outros">Outros</option>
+                </select>
+
+                <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" row="4" placeholder="Sua mensagem...." required></textarea>
+
+                    <label class="'checkbox-label">
+                        <input type="checkbox" id="termos" name="termos">
+                        Aceitos os <a href="#">termos de uso</a>.
+                    </label>
+                    <button type="submit">Enviar</button>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p id="rodape">&copy; <span id="ano">2025</span> Exemplo HTML. Todos os direitos reservados.</p>
+
+    </footer>
+
+    <!-- script js -->
+    <script src="/script.js"></script>
+
+</body>
+</html>
