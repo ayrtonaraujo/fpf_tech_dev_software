@@ -1,60 +1,132 @@
-h1, h2 {
-    color: chartreuse;;
+* {
+    margin: 0;
+    box-sizing: border-box;
 }
 
-h2 {
-    padding-top: 1em;
-    
+h1, h2 {
+    color: rgb(188, 244, 133);
+}
+
+h1 img {
+    height: 1em;
+    width: 1em;
 }
 
 body {
-    background-color: rgb(15, 15, 15);
-    color: whitesmoke;
+    background: #020024;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(22, 22, 59, 1) 35%, rgba(0, 0, 0, 1) 100%);
+    color: rgb(243, 243, 243);
     font-family: "Plus Jakarta Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
     /* border: 3px solid rgb(255, 255, 255); */
     padding: 3em;
-    
+    line-height: 1.5;    
 }
 
-a {
-    color: chartreuse;
+nav a {
+     color: rgb(57, 66, 140);
 }
 
-a:visited {
-    color: forestgreen;
+nav a:visited {
+    color: rgb(31, 41, 58);
+}
+
+/* #servicos ul li {
+    padding-right: 10px;
+} */
+
+nav a:hover {
+    background-color: rgb(175, 255, 118);
+    padding: 10px;
 }
 
 img {
-    width: 300px;
-    border-width: 3px;
-    border-color: aliceblue;
-    border-style: dotted;    
-    border-radius: 1em;
+    max-width: 100%;
+    max-height: 50%;
+    border-radius: 10px;
+    margin-top: 10px;
 }
 
-#formulario-contato {
-    display: grid;
-    
+a {
+    color:  rgb(188, 244, 133);
 }
 
-#formulario-contato label {
-    padding-top: 1em;
-    padding-bottom: 0.5em;
+a:visited {
+    color: rgb(68, 114, 15);
+}
+
+a:hover {
+    color: aliceblue;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .navbar ol {
+    margin-top: 10px;
+    color: rgb(38, 39, 66);
     display: flex;
-    padding-right: 1em;
+    padding-left: 3em;
     padding-bottom: 0.5em;
     padding-top: 0.5em;
-    border-radius: 1em;
-    border: 2px dotted ;
+    border-radius: 5px;
+    background-color: rgb(248, 252, 255);
+    font-weight: bold;
+    margin-bottom: 1em;
 }
 
 .navbar ol li{
     padding-right: 3em;
-    
+}
+
+main section {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 1em;
+    margin-bottom: 25px;
+}
+
+input, textarea, select {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    color: rgb(30, 30, 30);
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: 2px solid   rgb(188, 244, 133);
+}
+
+label.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1rem;
+    user-select: none;
+    border-radius: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color:  rgb(188, 244, 133);
+    font-weight: bold;
+    color:rgb(31, 41, 58);
+    cursor: pointer;
+    transition: backgorund-color 1s;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: aliceblue;
+    color: #1c1c1c;
+}
+
+footer {
+    text-align: center;
+    padding-top: 30px;
 }

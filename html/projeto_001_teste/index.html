@@ -1,5 +1,7 @@
 <!DOCTYPE html>
+
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,13 +14,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
 
-    <title>Exemplo</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="/img/html_icon.png">
+
+    <title>Exemplo HTML</title>
 </head>
 
 
 <body>
     <header>
-        <h1>Exemplo HTML</h1>
+        <h1><img src="/img/content-cion.png"> Bem-Vindo ao Exemplo HTML</h1>
         <nav class="navbar">
             <ol>
                 <li><a href="#sobre">Sobre</a></li>
@@ -32,8 +37,8 @@
     <main>
         <section id="sobre">
             <h2>Sobre</h2>        
-        <p>Essa é uma página de exemplo de HTML. Apenas para aprendizado e aplicação no curso de desenvolvimento de sistemas da FPFTech.</p>
-        <img src="/img/bebe.gif" alt="HTML.">
+        <p>Essa é uma página de exemplo de HTML. Apenas para aprendizado e aplicação no curso de extensão de Desenvolvimento de Sistemas da FPFTech.</p>
+        <img src="/img/html.jpg" alt="HTML.">
         </section>
         
     
@@ -59,7 +64,8 @@
                 <input type="email" id="email" name="email" placeholder="Digite o seu email." required/>
 
                 <label for="assunto">Assunto:</label>
-        <!-- "combobox" -->
+
+                <!-- "combobox" -->
                 <select id="assunto" name='assunto' required>
                     <option value="" disabled selected>Escolha um assunto</option>
                      <option value="orcamento">Orçamento</option>
@@ -71,9 +77,9 @@
                 <label for="mensagem">Mensagem:</label>
                     <textarea id="mensagem" name="mensagem" row="4" placeholder="Sua mensagem...." required></textarea>
 
-                    <label class="'checkbox-label">
+                    <label class="checkbox-label">
                         <input type="checkbox" id="termos" name="termos">
-                        Aceitos os <a href="#">termos de uso</a>.
+                        Aceito os <a href="#">termos de uso</a>.
                     </label>
                     <button type="submit">Enviar</button>
 
@@ -90,4 +96,5 @@
     <script src="/script.js"></script>
 
 </body>
+
 </html>
