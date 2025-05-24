@@ -3,6 +3,11 @@
     box-sizing: border-box;
 }
 
+header {
+    text-align: center;
+    padding: 10px;
+}
+
 h1, h2 {
     color: rgb(188, 244, 133);
 }
@@ -12,35 +17,43 @@ h1 img {
     width: 1em;
 }
 
+
 body {
-    background: #020024;
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(22, 22, 59, 1) 35%, rgba(0, 0, 0, 1) 100%);
+    /* background: #020024;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(22, 22, 59, 1) 35%, rgba(0, 0, 0, 1) 100%); */
+    background-color: #1c1c1c;
     color: rgb(243, 243, 243);
     font-family: "Plus Jakarta Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
     /* border: 3px solid rgb(255, 255, 255); */
-    padding: 3em;
-    line-height: 1.5;    
+    margin: 0;
+    line-height: 1.5;
 }
+
 
 nav a {
      color: rgb(57, 66, 140);
 }
 
+
 nav a:visited {
     color: rgb(31, 41, 58);
 }
+
 
 /* #servicos ul li {
     padding-right: 10px;
 } */
 
+
 nav a:hover {
     background-color: rgb(175, 255, 118);
     padding: 10px;
+    color: #1c1c1c;
 }
+
 
 img {
     max-width: 100%;
@@ -49,17 +62,21 @@ img {
     margin-top: 10px;
 }
 
+
 a {
     color:  rgb(188, 244, 133);
 }
+
 
 a:visited {
     color: rgb(68, 114, 15);
 }
 
+
 a:hover {
     color: aliceblue;
 }
+
 
 form {
     display: flex;
@@ -67,40 +84,61 @@ form {
     gap: 10px;
 }
 
-.navbar ol {
+
+.navbar {
+    text-align: center;
     margin-top: 10px;
     color: rgb(38, 39, 66);
-    display: flex;
-    padding-left: 3em;
+    padding-left: 0.2em;
     padding-bottom: 0.5em;
     padding-top: 0.5em;
+    padding-right: 0.2em;
     border-radius: 5px;
     background-color: rgb(248, 252, 255);
     font-weight: bold;
     margin-bottom: 1em;
+    box-sizing:inherit;
 }
+
+
+.navbar ol {
+    text-align: center;
+    display: inline flex;
+
+}
+
 
 .navbar ol li{
     padding-right: 3em;
 }
 
+
 main section {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     padding: 1em;
     margin-bottom: 25px;
+    border: 1px solid rgb(188, 244, 133);
+    margin: 3em;
 }
 
-input, textarea, select {
+
+input,
+textarea,
+select {
     padding: 10px;
     border: none;
     border-radius: 10px;
     color: rgb(30, 30, 30);
 }
 
-input:focus, textarea:focus, select:focus {
+
+input:focus,
+textarea:focus,
+select:focus {
     outline: 2px solid   rgb(188, 244, 133);
 }
+
 
 label.checkbox-label {
     display: flex;
@@ -111,6 +149,7 @@ label.checkbox-label {
     border-radius: 10px;
 }
 
+
 button {
     padding: 10px 15px;
     background-color:  rgb(188, 244, 133);
@@ -120,6 +159,7 @@ button {
     transition: backgorund-color 1s;
     border-radius: 10px;
 }
+
 
 button:hover {
     background-color: aliceblue;

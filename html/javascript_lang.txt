@@ -1,0 +1,19 @@
+typeof -> descobrir tipo
+let -> variável
+const -> constante
+
+
+##### array
+let frutas = ["maçã", "carro", "torre Eiffel"]
+
+
+##### dicionário
+let pessoa = {
+	nome: "Carlos",
+	idade: 28,
+	ativo: true
+};
+
+
+
+
