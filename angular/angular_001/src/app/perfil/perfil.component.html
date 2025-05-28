@@ -1,1 +1,51 @@
-<p>perfil works!</p>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<div class="perfil">
+    
+    <div class="perfil-stats">
+        <img [src]="perfil.profile_photo" alt="Foto perfil de um profissional do jogo do bicho" id = 'profile_photo'/>
+
+        <div>
+            <strong>{{perfil.posts}}</strong><br>Publicações
+        </div>
+
+        <div>
+            <strong>{{perfil.followers}}</strong><br>Seguidores
+        </div>
+        
+        <div>
+            <strong>{{perfil.following}}</strong><br>Seguindo
+        </div>
+    </div>
+
+
+    <div class="perfil-info">
+        <h2>{{perfil.name}}</h2>
+        <p>{{perfil.username}}</p>
+        <p>{{perfil.local}}</p>
+        <p>{{perfil.age}}</p>
+        <p>{{perfil.work}}</p>
+        <p>{{perfil.company}}</p>
+    </div>
+
+
+    <!-- two-way binding -->
+    <input [(ngModel)]="nome"> 
+    <p>{{nome}}</p>
+
+    <!-- diretivas estruturais -->
+    @if (status) {
+        <p>Bem-vindo!</p>
+    }
+
+    <ul>
+        @for (fruta of frutas; track fruta) {
+            <li>{{fruta}}</li>
+        }
+    </ul>
+
+    
+
+</div>

@@ -1,21 +1,37 @@
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+
 
 @Component({
   selector: 'app-perfil',
-  imports: [],
+  imports: [
+    FormsModule
+  ],
   standalone: true,
   templateUrl: './perfil.component.html',
   styleUrl: './perfil.component.css'
 })
+
 export class PerfilComponent {
-  name: string = "Ayrton Araújo"
-  username: string = "ayrtonaraujo"
-  local: string = "Manaus"
-  age: number = 30
-  work: string = "Maker"
-  company: string = "Freelance"
-  posts: number = 36
-  followers: number = 400
-  following: number = 200
-  profile_photo: string = 'https://i.pinimg.com/564x/2b/bc/af/2bbcaf8b5d4409e227782d4fe4484b59.jpg'
+  nome:string = '';
+  status:boolean = true;
+
+  frutas: string[] = [
+    'banana', 
+    'caju', 
+    'morango'
+  ]
+
+  perfil = {
+    name:"José da Silva",
+    username: "josesilva12876",
+    local: "Manaus",
+    age: 50,
+    work: "Pedreiro",
+    company: "JS Construções",
+    posts : 36,
+    followers : 403,
+    following :  200,
+    profile_photo : 'https://media.tenor.com/I6j5DmlTTk0AAAAM/stare.gif',
+  }
 }
