@@ -1,0 +1,8 @@
+<ul>
+    @for (tarefa of listaTarefas; track tarefa) {
+        <li [style.color]="tarefa.status ? 'green' : 'black'"
+        (click) = "toggleOk(tarefa)">
+            {{ tarefa.titulo }} > {{ tarefa.description }}
+        </li>
+    }
+</ul>
