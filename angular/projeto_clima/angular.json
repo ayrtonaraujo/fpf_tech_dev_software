@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "lista_tarefas": {
+    "projeto_clima": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -58,10 +58,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "lista_tarefas:build:production"
+              "buildTarget": "projeto_clima:build:production"
             },
             "development": {
-              "buildTarget": "lista_tarefas:build:development"
+              "buildTarget": "projeto_clima:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -88,6 +88,6 @@
     }
   },
   "cli": {
-    "analytics": "cff7ef27-1fae-485e-bc62-5d7cadb5659d"
+    "analytics": false
   }
 }
