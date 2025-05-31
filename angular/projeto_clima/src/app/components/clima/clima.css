@@ -1,5 +1,23 @@
 * {
     font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
     color: black;
+}
+
+.datainfo {
+    background-color: aquamarine;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 1em;
+    /* display: flex; */
+}
+
+tr th {
+    background-color: aliceblue;
+    border: 1px solid black;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+tr td {
+    border: 1px solid grey;
 }

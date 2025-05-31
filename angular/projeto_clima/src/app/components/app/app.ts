@@ -6,6 +6,7 @@ import { Clima } from "../clima/clima";
 @Component({
   selector: 'app-root',
   imports: [Clima],
+  standalone: true,
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

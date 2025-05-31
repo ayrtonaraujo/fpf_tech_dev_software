@@ -1,16 +1,10 @@
-<head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-</head>
-
-<div class="datainfo">
-    <p>Latitude: {{ climaData.latitude }}</p>
-    <p>Longitude: {{ climaData.longitude }}</p>
-    <p>Elevation: {{ climaData.elevation }}</p>
-    <p>Date: {{ date }}</p>
-    <p>Temperature: {{ climaData.current.temperature_2m }} ºC</p>
-    <p>Wind: {{ climaData.current.wind_speed_10m }} m/s²</p>
+<div class="datainfo" *ngIf="climaData">
+  <p>Latitude: {{ climaData.latitude }}</p>
+  <p>Longitude: {{ climaData.longitude }}</p>
+  <p>Elevation: {{ climaData.elevation }}</p>
+  <p>Date: {{ date }}</p>
+  <p>Temperature: {{ climaData.current.temperature_2m }} ºC</p>
+  <p>Wind: {{ climaData.current.wind_speed_10m }} m/s²</p>
 </div>
 
 <table>

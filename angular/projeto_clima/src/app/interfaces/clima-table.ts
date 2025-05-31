@@ -1,6 +1,6 @@
 export interface ClimaTable {
-    time: string;
-    temperature: number;
-    humidity: number;
-    windSpeed: number;
+  time: Date;
+  temperature: number;
+  humidity: number;
+  windSpeed: number;
 }
