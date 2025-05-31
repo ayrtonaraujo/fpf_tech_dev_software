@@ -4,4 +4,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
-<p>clima works!</p>
+<div class="datainfo">
+    <p>Latitude: {{ climaData.latitude }}</p>
+    <p>Longitude: {{ climaData.longitude }}</p>
+    <p>Elevation: {{ climaData.elevation }}</p>
+    <p>Date: {{ date }}</p>
+    <p>Temperature: {{ climaData.current.temperature_2m }} ºC</p>
+    <p>Wind: {{ climaData.current.wind_speed_10m }} m/s²</p>
+</div>
+
+<table>
+    <tr>
+        <th> Hour </th>
+        <th> Temperature </th>
+        <th> Humidity </th>
+        <th> Wind </th>
+    </tr>
+
+    @for (data of dataTable; track data) {
+        <tr>
+            <td> {{ data.time }} </td>
+            <td> {{ data.temperature }} </td>
+            <td> {{ data.humidity }} </td>
+            <td> {{ data.windSpeed }} </td>
+        </tr>
+    }
+</table>
