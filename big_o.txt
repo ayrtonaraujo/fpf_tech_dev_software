@@ -1,3 +1,0 @@
-big_O notation
-
-definição de desempenho de um sistema
