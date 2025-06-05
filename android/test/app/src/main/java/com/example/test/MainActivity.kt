@@ -48,18 +48,18 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
         Produto("Leite", 6.0, true),
         Produto("Café", 12.0, false),
         Produto("Manteiga", 14.5, true),
-        Produto("Queijo", 18.0, false),
+        Produto("Queijo", 18.0, true),
         Produto("Presunto", 16.7, true)
    )
 
     ListaDeProdutos(produtos)
 }
 
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    TestTheme {
-        Greeting("Android")
-    }
-}
+//@Preview(showBackground = true)
+//@Composable
+//fun GreetingPreview() {
+//    TestTheme {
+//        Greeting("Android")
+//    }
+//}
 

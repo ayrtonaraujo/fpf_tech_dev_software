@@ -10,8 +10,10 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.test.models.Produto
+import com.google.gson.Gson
 
 @Composable
 fun ListaDeProdutos (produtos: List<Produto>) {
@@ -31,4 +33,16 @@ fun ListaDeProdutos (produtos: List<Produto>) {
             Text ("Média: R$%.2f".format(media))
             Text ("Mais caro: ${maisCaro?.nome}, ${maisCaro?.preco}")
     }
+}
+
+val produtoJson : String = """{"nome": "Mr. Músculo", "preco": 15.80, "emPromocao": true}"""
+
+val gson = Gson()
+val objetoFinal = gson.fromJson(produtoJson, Produto::class.java)
+
+
+@Preview
+@Composable
+fun VerJson () {
+    Text("${objetoFinal.nome} - ${objetoFinal.preco} - ${objetoFinal.emPromocao}")
 }
