@@ -1,0 +1,473 @@
+[clients]
+
+[
+    {
+        "id": 1,
+        "name": "Fulano da Silva",
+        "age": 23,
+        "rg": "123456-7",
+        "cpf": "123456789-01"
+    },
+    {
+        "id": 2,
+        "name": "Siclano da Silva",
+        "age": 41,
+        "rg": "234567-8",
+        "cpf": "234567890-12"
+    },
+    {
+        "id": 3,
+        "name": "Fulano da Silva",
+        "age": 23,
+        "rg": "123456-7",
+        "cpf": "123456789-01"
+    },
+    {
+        "id": 4,
+        "name": "Siclano da Silva",
+        "age": 41,
+        "rg": "234567-8",
+        "cpf": "234567890-12"
+    },
+    {
+        "id": 5,
+        "name": "Gerson Holanda",
+        "age": 28,
+        "rg": "2635246",
+        "cpf": "64487499797"
+    },
+    {
+        "id": 6,
+        "name": "Lulian",
+        "age": 30,
+        "rg": "2566699",
+        "cpf": "02355588899"
+    },
+    {
+        "id": 7,
+        "name": "Jonatas",
+        "age": 28,
+        "rg": "555555",
+        "cpf": "555555"
+    },
+    {
+        "id": 8,
+        "name": "Jonatasione",
+        "age": 50,
+        "rg": "555555",
+        "cpf": "555555"
+    },
+    {
+        "id": 9,
+        "name": "Morgado",
+        "age": 58,
+        "rg": "555555",
+        "cpf": "555555"
+    },
+    {
+        "id": 10,
+        "name": "Marquito",
+        "age": 28,
+        "rg": "555555",
+        "cpf": "5556666788"
+    }
+]
+
+
+
+
+
+[products]
+
+[
+    {
+        "id": 1,
+        "description": "Aula de Ingles com material didático",
+        "quantity": 1
+    },
+    {
+        "id": 2,
+        "description": "Material didático de Introdução a Física nível Ensino Superior",
+        "quantity": 2
+    },
+    {
+        "id": 3,
+        "description": "Curso de Programação em Python para iniciantes",
+        "quantity": 1
+    },
+    {
+        "id": 4,
+        "description": "Material didático de Cálculo Diferencial e Integral",
+        "quantity": 2
+    },
+    {
+        "id": 5,
+        "description": "Livro de Estatística Aplicada",
+        "quantity": 1
+    },
+    {
+        "id": 6,
+        "description": "Kit de material didático para Química Orgânica",
+        "quantity": 3
+    },
+    {
+        "id": 7,
+        "description": "Curso de Redação Acadêmica",
+        "quantity": 1
+    },
+    {
+        "id": 8,
+        "description": "Material de Estudos sobre Inteligência Artificial",
+        "quantity": 2
+    },
+    {
+        "id": 9,
+        "description": "Livro de Métodos Numéricos para Engenharia",
+        "quantity": 1
+    },
+    {
+        "id": 10,
+        "description": "Material didático sobre Física Quântica",
+        "quantity": 2
+    }
+]
+
+
+
+
+
+
+
+[employees]
+
+[
+    {
+        "id": 1,
+        "created_at": null,
+        "modified_at": null,
+        "active": true,
+        "name": "Beltrano dos Santos",
+        "registration": "456789"
+    },
+    {
+        "id": 2,
+        "created_at": null,
+        "modified_at": null,
+        "active": true,
+        "name": "Fulana Rosa",
+        "registration": "345678"
+    },
+    {
+        "id": 3,
+        "created_at": "2025-06-06T23:38:34.251033Z",
+        "modified_at": "2025-06-06T23:38:34.251045Z",
+        "active": true,
+        "name": "Carlos Lima",
+        "registration": "123456"
+    },
+    {
+        "id": 4,
+        "created_at": "2025-06-06T23:38:57.882818Z",
+        "modified_at": "2025-06-06T23:38:57.882829Z",
+        "active": true,
+        "name": "Mariana Oliveira",
+        "registration": "234567"
+    },
+    {
+        "id": 5,
+        "created_at": "2025-06-06T23:39:03.622960Z",
+        "modified_at": "2025-06-06T23:39:03.622975Z",
+        "active": true,
+        "name": "João Silva",
+        "registration": "345679"
+    },
+    {
+        "id": 6,
+        "created_at": "2025-06-06T23:39:12.876479Z",
+        "modified_at": "2025-06-06T23:39:12.876491Z",
+        "active": true,
+        "name": "Ana Souza",
+        "registration": "456780"
+    },
+    {
+        "id": 7,
+        "created_at": "2025-06-06T23:39:19.095679Z",
+        "modified_at": "2025-06-06T23:39:19.095694Z",
+        "active": true,
+        "name": "Ricardo Mendes",
+        "registration": "567891"
+    },
+    {
+        "id": 8,
+        "created_at": "2025-06-06T23:39:27.113146Z",
+        "modified_at": "2025-06-06T23:39:27.113161Z",
+        "active": true,
+        "name": "Beatriz Costa",
+        "registration": "678902"
+    },
+    {
+        "id": 9,
+        "created_at": "2025-06-06T23:39:38.209633Z",
+        "modified_at": "2025-06-06T23:39:38.209661Z",
+        "active": true,
+        "name": "Fernando Nunes",
+        "registration": "789013"
+    },
+    {
+        "id": 10,
+        "created_at": "2025-06-06T23:39:54.033765Z",
+        "modified_at": "2025-06-06T23:39:54.033777Z",
+        "active": true,
+        "name": "Larissa Pereira",
+        "registration": "890124"
+    }
+]
+
+
+
+
+
+[sales]
+
+[
+    {
+        "id": 1,
+        "product": {
+            "id": 1,
+            "description": "Aula de Ingles com material didático",
+            "quantity": 1
+        },
+        "client": {
+            "id": 1,
+            "name": "Fulano da Silva",
+            "age": 23,
+            "rg": "123456-7",
+            "cpf": "123456789-01"
+        },
+        "employee": {
+            "id": 1,
+            "created_at": null,
+            "modified_at": null,
+            "active": true,
+            "name": "Beltrano dos Santos",
+            "registration": "456789"
+        },
+        "nrf": "123456789-0"
+    },
+    {
+        "id": 2,
+        "product": {
+            "id": 2,
+            "description": "Material didático de Introdução a Física nível Ensino Superior",
+            "quantity": 2
+        },
+        "client": {
+            "id": 1,
+            "name": "Fulano da Silva",
+            "age": 23,
+            "rg": "123456-7",
+            "cpf": "123456789-01"
+        },
+        "employee": {
+            "id": 2,
+            "created_at": null,
+            "modified_at": null,
+            "active": true,
+            "name": "Fulana Rosa",
+            "registration": "345678"
+        },
+        "nrf": "234567890-1"
+    },
+    {
+        "id": 3,
+        "product": {
+            "id": 1,
+            "description": "Aula de Ingles com material didático",
+            "quantity": 1
+        },
+        "client": {
+            "id": 2,
+            "name": "Siclano da Silva",
+            "age": 41,
+            "rg": "234567-8",
+            "cpf": "234567890-12"
+        },
+        "employee": {
+            "id": 1,
+            "created_at": null,
+            "modified_at": null,
+            "active": true,
+            "name": "Beltrano dos Santos",
+            "registration": "456789"
+        },
+        "nrf": "345678901-2"
+    },
+    {
+        "id": 4,
+        "product": {
+            "id": 4,
+            "description": "Material didático de Cálculo Diferencial e Integral",
+            "quantity": 2
+        },
+        "client": {
+            "id": 4,
+            "name": "Siclano da Silva",
+            "age": 41,
+            "rg": "234567-8",
+            "cpf": "234567890-12"
+        },
+        "employee": {
+            "id": 4,
+            "created_at": "2025-06-06T23:38:57.882818Z",
+            "modified_at": "2025-06-06T23:38:57.882829Z",
+            "active": true,
+            "name": "Mariana Oliveira",
+            "registration": "234567"
+        },
+        "nrf": "456789012-3"
+    },
+    {
+        "id": 5,
+        "product": {
+            "id": 5,
+            "description": "Livro de Estatística Aplicada",
+            "quantity": 1
+        },
+        "client": {
+            "id": 5,
+            "name": "Gerson Holanda",
+            "age": 28,
+            "rg": "2635246",
+            "cpf": "64487499797"
+        },
+        "employee": {
+            "id": 5,
+            "created_at": "2025-06-06T23:39:03.622960Z",
+            "modified_at": "2025-06-06T23:39:03.622975Z",
+            "active": true,
+            "name": "João Silva",
+            "registration": "345679"
+        },
+        "nrf": "567890123-4"
+    },
+    {
+        "id": 6,
+        "product": {
+            "id": 6,
+            "description": "Kit de material didático para Química Orgânica",
+            "quantity": 3
+        },
+        "client": {
+            "id": 6,
+            "name": "Lulian",
+            "age": 30,
+            "rg": "2566699",
+            "cpf": "02355588899"
+        },
+        "employee": {
+            "id": 6,
+            "created_at": "2025-06-06T23:39:12.876479Z",
+            "modified_at": "2025-06-06T23:39:12.876491Z",
+            "active": true,
+            "name": "Ana Souza",
+            "registration": "456780"
+        },
+        "nrf": "678901234-5"
+    },
+    {
+        "id": 7,
+        "product": {
+            "id": 7,
+            "description": "Curso de Redação Acadêmica",
+            "quantity": 1
+        },
+        "client": {
+            "id": 7,
+            "name": "Jonatas",
+            "age": 28,
+            "rg": "555555",
+            "cpf": "555555"
+        },
+        "employee": {
+            "id": 7,
+            "created_at": "2025-06-06T23:39:19.095679Z",
+            "modified_at": "2025-06-06T23:39:19.095694Z",
+            "active": true,
+            "name": "Ricardo Mendes",
+            "registration": "567891"
+        },
+        "nrf": "789012345-6"
+    },
+    {
+        "id": 8,
+        "product": {
+            "id": 8,
+            "description": "Material de Estudos sobre Inteligência Artificial",
+            "quantity": 2
+        },
+        "client": {
+            "id": 8,
+            "name": "Jonatasione",
+            "age": 50,
+            "rg": "555555",
+            "cpf": "555555"
+        },
+        "employee": {
+            "id": 8,
+            "created_at": "2025-06-06T23:39:27.113146Z",
+            "modified_at": "2025-06-06T23:39:27.113161Z",
+            "active": true,
+            "name": "Beatriz Costa",
+            "registration": "678902"
+        },
+        "nrf": "890123456-7"
+    },
+    {
+        "id": 9,
+        "product": {
+            "id": 9,
+            "description": "Livro de Métodos Numéricos para Engenharia",
+            "quantity": 1
+        },
+        "client": {
+            "id": 9,
+            "name": "Morgado",
+            "age": 58,
+            "rg": "555555",
+            "cpf": "555555"
+        },
+        "employee": {
+            "id": 9,
+            "created_at": "2025-06-06T23:39:38.209633Z",
+            "modified_at": "2025-06-06T23:39:38.209661Z",
+            "active": true,
+            "name": "Fernando Nunes",
+            "registration": "789013"
+        },
+        "nrf": "901234567-8"
+    },
+    {
+        "id": 10,
+        "product": {
+            "id": 10,
+            "description": "Material didático sobre Física Quântica",
+            "quantity": 2
+        },
+        "client": {
+            "id": 10,
+            "name": "Marquito",
+            "age": 28,
+            "rg": "555555",
+            "cpf": "5556666788"
+        },
+        "employee": {
+            "id": 10,
+            "created_at": "2025-06-06T23:39:54.033765Z",
+            "modified_at": "2025-06-06T23:39:54.033777Z",
+            "active": true,
+            "name": "Larissa Pereira",
+            "registration": "890124"
+        },
+        "nrf": "012345678-9"
+    }
+]
