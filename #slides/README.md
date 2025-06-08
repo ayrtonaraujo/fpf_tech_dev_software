@@ -86,17 +86,13 @@
     built-in functions
 
 
-14
+14 e 15
     o que é POO
     classe e objetos
     atributos e métodos
     exemplos de classes e objetos em python
     herança
     encapsulamento
-
-
-15
-
 
 
 16 e 17

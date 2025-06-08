@@ -2,4 +2,4 @@ pip freeze > requirements.txt
 -
 pip install ... # to install libs
 -
-pip install requirements.txt # to reinstall the libs
+pip install -r requirements.txt # to reinstall the requirements libs
