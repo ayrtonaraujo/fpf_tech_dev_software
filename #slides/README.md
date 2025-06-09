@@ -1,37 +1,30 @@
-01
+# 01
     Introdução do curso
 
-
-02
+# 02
     Aula sobre arquitetura de computadores
 
-
-03
+# 03
     Módulo 2 - Lógica de Programação
     Introdução à Logica de programação
     Introdução à Algoritmos
 
-
-04 e 05
+# 04 e 05
     Fluxogramas e Pensando Algoritmicamente
 
-
-06
+# 06
     Exercícios de Fluxograma na ferramenta Draw.io
 
-
-07
+# 07
     Algoritmos em pseudocódigo na ferramenta Portugol Webstudio
 
-
-08
+# 08
     for loop
     biblioteca Matematica, função arredondar(2 argumentos = cálculoOUnúmero, nºcasasDecimais)
     vetor[Lista]
     algoritmo do robo japones
 
-
-09
+# 09
     biblioteca Texto, função posicao_texto(3 argumentos = palavraAbuscar, textoOndeBuscar, nºindiceComeçaBusca) -> retorna um numero inteiro do índice achado, senão retorna -1
     biblioteca Tipos, função inteiro_para_cadeia(2 argumentos = nºpraConverterEmString, nºbase10ou2ou16)              -> retorna uma cadeira de caracteres numéricos
     biblioteca Util, função numero_elementos(1 argumento = lista) -> retorna o numero inteiro de elementos da lista
@@ -41,14 +34,12 @@
     Laço Enquanto (While loop)
     Se -> Senão Se -> Senão
 
-
-10
+# 10
     Introdução a Python
     PIP 
     venv
 
-
-11
+# 11
     tipagem em python
     declarar tipos nas variáveis
     input()
@@ -63,8 +54,7 @@
     operações relacionais
     lógicos
 
-
-12
+# 12
     estrutura de decisão (if, elif, else)
     estrutura de repetição (for loop, while loop)
     range()
@@ -79,14 +69,14 @@
     METODOS de DICIONARIO = .keys(), .values(), .items()
 
 
-13
+# 13
     resumão Python
     Iteráveis (listas, tuplas, dicionários) e funções
     funções de string
     built-in functions
 
 
-14 e 15
+# 14 e 15
     o que é POO
     classe e objetos
     atributos e métodos
@@ -95,11 +85,11 @@
     encapsulamento
 
 
-16 e 17
+# 16 e 17
     versionamento git
 
 
-18
+# 18
     Introdução ao Banco de dados
     entidade e atributos
     atibutos multivalorados/compostos
@@ -109,7 +99,7 @@
     Cardinalidade 1:1, 1:N, N:N
 
 
-19
+# 19
     Normalização
     1 norma Formal
     2 norma Formal
@@ -117,14 +107,14 @@
     Modelagem do banco de dados (exemplos)
 
 
-20
+# 20
     Exemplos de Modelagem:
     Escola
     Biblioteca
     Restaurante
 
 
-21
+# 21
     Introdução a SQL
     DDL = 
         create table (cria uma tabela nova, coloca-se o nome e os atributos com os tipos)
@@ -140,45 +130,45 @@
         DELETE...WHERE (deleta os dados filtrados existentes na tabela)
 
 
-22
+# 22
     Prática de SQL
         Agregações
         Group by
         Joins
 
 
-23
+# 23
     Introdução ao Django REST framework
 
 
-24
+# 24
     Django project
         settings
 
 
-25
+# 25
     resolução exercicio
     django models
     migrations (aplicar no banco de dados)
 
 
-26
+# 26
     Django
     Aplicação Principal = settings, wsgi, asgi, urls
     Sua Aplicação baseada na principal = models
     ORM = migrations (python manage.py makemigrations, migrate, showmigrations)
 
 
-27
+# 27
     django = models & serializers
 
 
-28
+# 28
     - serializers
     - viewsets
 
 
-29
+# 29
     Django
         viewsets
     urls
@@ -187,7 +177,7 @@
         Testes de endpoints
 
 
-30
+# 30
     Django
     (melhoria models)
         permissões (login)
@@ -195,34 +185,34 @@
         - filters
 
 
-31
+# 31
     Exercicio Django
 
 
-32
+# 32
     Conceitos WEB
     HTML
 
 
-33
+# 33
     HTML exemplo
 
 
-34
+# 34
     WEB CSS
 
 
-35
+# 35
     JavaScript JS
     Finalização do website
 
 
-36
+# 36
     Angular
         componentes
 
 
-37
+# 37
     Data binding
         {{ interpolação }}
         [(ngModel)]=Two-way binding
@@ -232,23 +222,23 @@
         @Switch
 
 
-38
+# 38
     Serviços
     Injeção de Dependências
 
 
-39
+# 39
     Roteamento
 
 
-40
+# 40
     requisições HTTP
     API do clima
 
-41
+# 41
     Introdução a Kotlin
 
-42
+# 42
     Controle de Fluxo
     Data Classes
     Tipagem, 
@@ -258,7 +248,7 @@
     Estrutura de repetição (for/while/do-while)
 
 
-43
+# 43
     Coleções (lists, sets, maps)
     Tratamento de Dados (filter, sumOf, sortedBy, maxByOrNull)
     forEach
@@ -266,7 +256,7 @@
     LazyColunm/LazyList (precisam de items)
 
 
-44
+# 44
     Requisições Simuladas e Manipulação de JSON
     instalar bilioteca gson
     salvar um jsonProdutos  e um objProdutos no arquivo SERVICES > ProdutoService
@@ -275,3 +265,7 @@
     usar gson.toJson(objProdutos)
     isso transforma a lista de produtos do tipo List<Produto> em json
     Podemos usar @Preview com um @Composable pasa mostrar rapidamente um resultado na tela de Preview sem ter que precisar rodar o aplicativo inteiro.
+
+# 45
+    Kotlin e conexão com a API Django
+    Kotlin Models -> ServiceApi -> (Views) clientView -> (Views) Swiper -> MainActivity
