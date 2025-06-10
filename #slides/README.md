@@ -269,3 +269,7 @@
 # 45
     Kotlin e conexão com a API Django
     Kotlin Models -> ServiceApi -> (Views) clientView -> (Views) Swiper -> MainActivity
+
+# 46
+    Aula 46
+    Conecxão do Django com Kotlin e com Angular
