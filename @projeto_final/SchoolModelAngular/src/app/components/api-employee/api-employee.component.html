@@ -1,0 +1,30 @@
+<div class="employee-container">
+  <h2>Lista de Vendedores</h2>
+  @if (employeeList.length > 0) {
+    <ul>
+      @for (employee of employeeList; track employee) {
+        <li class="employee-card">
+          <div class="employee-details">
+            <strong>{{ employee.registration }}</strong> - {{ employee.name }}
+          </div>
+          <button class="delete-btn" (click)="deleteEmployee(employee.id)">Excluir</button>
+        </li>
+      }
+    </ul>
+  } @else {
+    <p>Nenhum vendedor encontrado.</p>
+  }
+  <hr>
+  <h2>Cadastro de Vendedor</h2>
+  <form #employeeForm="ngForm" (ngSubmit)="createEmployee()" class="form-wrapper">
+    <label>Nome:<input type="text" name="name" [(ngModel)]="newEmployee.name" required minlength="3"
+                       #name="ngModel"></label>
+    <label>Matrícula(somente números):
+      <div class="input-with-counter">
+        <input type="text" name="registration" [(ngModel)]="newEmployee.registration" required pattern="[0-9]{8}">
+        <small>{{ (newEmployee.registration?.length || 0) }}/8</small>
+      </div>
+    </label>
+    <button type="submit" [disabled]="!employeeForm.valid">Salvar</button>
+  </form>
+</div>

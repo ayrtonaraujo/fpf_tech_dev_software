@@ -1,0 +1,53 @@
+<div class="sale-container">
+  <h2>Lista de Vendas</h2>
+  @if (saleList.length > 0) {
+    <ul>
+      @for (sale of saleList; track sale) {
+        <li class="sale-card">
+          <div class="sale-details">
+            <p><strong>Produto:</strong> {{ sale.product.description }} ({{ sale.product.quantity }} un.)</p>
+            <p><strong>Cliente:</strong> {{ sale.client.name }}</p>
+            <p><strong>Vendedor:</strong> {{ sale.employee.name }}</p>
+            <p><strong>NRF:</strong> {{ sale.nrf }}</p>
+          </div>
+          <button class="delete-btn" (click)="deleteSale(sale.id)">Excluir</button>
+        </li>
+      }
+    </ul>
+  } @else {
+    <p>Nenhuma venda encontrada.</p>
+  }
+
+  <hr>
+  <h2>Cadastro de Venda</h2>
+  <form #saleForm="ngForm" (ngSubmit)="createSale()" class="form-wrapper">
+    <label>Cliente:
+      <select name="client_id" [(ngModel)]="newSale.client_id" required>
+        @for (client of clientList; track client) {
+          <option [value]="client.id">{{ client.name }}</option>
+        }
+      </select>
+    </label>
+    <label>Produto:
+      <select name="product_id" [(ngModel)]="newSale.product_id" required>
+        @for (product of productList; track product) {
+          <option [value]="product.id">{{ product.description }}</option>
+        }
+      </select>
+    </label>
+    <label>Vendedor:
+      <select name="employee_id" [(ngModel)]="newSale.employee_id" required>
+        @for (employee of employeeList; track employee) {
+          <option [value]="employee.id">{{ employee.name }}</option>
+        }
+      </select>
+    </label>
+    <label>NRF(somente números):
+      <div class="input-with-counter">
+        <input type="text" name="nrf" [(ngModel)]="newSale.nrf" required pattern="[0-9]{9}">
+        <small>{{ (newSale.nrf?.length || 0) }}/9</small>
+      </div>
+    </label>
+    <button type="submit" [disabled]="!saleForm.valid">Salvar</button>
+  </form>
+</div>

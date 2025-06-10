@@ -1,0 +1,7 @@
+<ul>
+  @for (produto of listaProdutos; track produto) {
+    <li [class.promo]="produto.promocao">{{produto.nome}}
+    @if (produto.promocao){<span> - Em promoção!</span>}
+    </li>
+  }
+</ul>

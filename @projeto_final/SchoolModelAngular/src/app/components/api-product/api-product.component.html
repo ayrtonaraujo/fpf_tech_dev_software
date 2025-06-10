@@ -1,0 +1,25 @@
+<div class="product-container">
+  <h2>Lista de Produtos</h2>
+  @if (productList.length > 0) {
+    <ul>
+      @for (product of productList; track product) {
+        <li class="product-card">
+          <div class="product-details">
+            <strong>{{ product.description }}</strong> (Qtd.: {{ product.quantity }})
+          </div>
+          <button class="delete-btn" (click)="deleteProduct(product.id)">Excluir</button>
+        </li>
+      }
+    </ul>
+  } @else {
+    <p>Nenhum produto encontrado.</p>
+  }
+  <hr>
+  <h2>Cadastro de Produto</h2>
+  <form #productForm="ngForm" (ngSubmit)="createProduct(newProduct)" class="form-wrapper">
+    <label>Nome:<input type="text" name="description" [(ngModel)]="newProduct.description" required minlength="3"
+                       #name="ngModel"></label>
+    <label>Quantidade:<input type="number" name="quantity" [(ngModel)]="newProduct.quantity" required></label>
+    <button type="submit" [disabled]="!productForm.valid">Salvar</button>
+  </form>
+</div>

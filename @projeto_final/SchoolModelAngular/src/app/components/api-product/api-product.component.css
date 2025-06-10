@@ -1,0 +1,114 @@
+/*.product-container {*/
+/*  max-width: 800px;*/
+/*  margin: 2rem auto;*/
+/*  padding: 1rem;*/
+/*  font-family: Arial, sans-serif;*/
+/*}*/
+
+/*.product-container h2 {*/
+/*  text-align: center;*/
+/*  margin-bottom: 1.5rem;*/
+/*  color: #333;*/
+/*}*/
+
+/*.product-card {*/
+/*  background-color: #f9f9f9;*/
+/*  border: 1px solid #ddd;*/
+/*  border-radius: 12px;*/
+/*  padding: 1rem;*/
+/*  margin-bottom: 1rem;*/
+/*  display: flex;*/
+/*  justify-content: space-between;*/
+/*  align-items: center;*/
+/*  transition: transform 0.2s;*/
+/*}*/
+
+/*.product-card:hover {*/
+/*  transform: scale(1.01);*/
+/*  background-color: #f0f8ff;*/
+/*}*/
+
+/*.product-details {*/
+/*  flex-grow: 1;*/
+/*}*/
+
+/*.delete-btn {*/
+/*  background-color: #e74c3c;*/
+/*  color: white;*/
+/*  border: none;*/
+/*  border-radius: 8px;*/
+/*  padding: 0.5rem 1rem;*/
+/*  cursor: pointer;*/
+/*  font-weight: bold;*/
+/*  transition: background-color 0.2s;*/
+/*}*/
+
+/*.delete-btn:hover {*/
+/*  background-color: #c0392b;*/
+/*}*/
+
+/*form {*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  gap: 0.5rem;*/
+/*  max-width: 400px;*/
+/*  margin: 0 auto 2rem auto;*/
+/*}*/
+
+/*form input {*/
+/*  padding: 0.5rem;*/
+/*  border: 1px solid #ccc;*/
+/*  border-radius: 8px;*/
+/*}*/
+
+/*form button {*/
+/*  padding: 0.5rem;*/
+/*  border: none;*/
+/*  border-radius: 8px;*/
+/*  background-color: #2ecc71;*/
+/*  color: white;*/
+/*  font-weight: bold;*/
+/*  cursor: pointer;*/
+/*}*/
+
+/*form button:hover {*/
+/*  background-color: #27ae60;*/
+/*}*/
+
+/*.form-wrapper {*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  gap: 1rem;*/
+/*  max-width: 400px;*/
+/*  margin: 2rem auto;*/
+/*  padding: 1rem;*/
+/*  border: 1px solid #ddd;*/
+/*  border-radius: 12px;*/
+/*  background-color: #fefefe;*/
+/*}*/
+
+/*.form-wrapper input {*/
+/*  width: 95%;*/
+/*}*/
+/*.input-with-counter {*/
+/*  display: flex;*/
+/*  justify-content: space-between;*/
+/*  align-items: center;*/
+/*}*/
+
+/*.input-with-counter input {*/
+/*  flex-grow: 1;*/
+/*  margin-right: 0.5rem; !* espaço entre input e contador *!*/
+/*}*/
+
+/*.input-with-counter small {*/
+/*  white-space: nowrap;*/
+/*  color: #555;*/
+/*  font-size: 0.875rem;*/
+/*}*/
+
+/*button:disabled {*/
+/*  background-color: #ccc;*/
+/*  color: #666;*/
+/*  cursor: not-allowed;*/
+/*}*/

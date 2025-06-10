@@ -1,0 +1,39 @@
+<div class="client-container">
+  <h2>Lista de Clientes</h2>
+  @if (clientList.length > 0) {
+    <ul>
+      @for (client of clientList; track client) {
+        <li class="client-card">
+          <div class="client-details">
+            <strong>{{ client.name }}</strong> ({{ client.age }} anos)
+            <p><strong>RG:</strong> {{ client.rg }} | <strong>CPF:</strong> {{ client.cpf }}</p>
+          </div>
+<!--          <button class="delete-btn" (click)="deleteClient(client.id)">Excluir</button>-->
+        </li>
+      }
+    </ul>
+  } @else {
+    <p>Nenhum cliente encontrado.</p>
+  }
+  <hr>
+  <h2>Cadastro de Cliente</h2>
+  <form #clientForm="ngForm" (ngSubmit)="createClient()" class="form-wrapper">
+    <label>Nome:<input type="text" name="name" [(ngModel)]="newClient.name" required minlength="3"
+                       #name="ngModel"></label>
+    <label>Idade(entre 18 e 100):<input type="number" name="age" [(ngModel)]="newClient.age" required min="18"
+                                        max="100"></label>
+    <label>RG(somente números):
+      <div class="input-with-counter">
+        <input type="text" name="rg" [(ngModel)]="newClient.rg" required pattern="[0-9]{8}">
+        <small>{{ (newClient.rg?.length || 0) }}/8</small>
+      </div>
+    </label>
+    <label>CPF(somente números):
+      <div class="input-with-counter">
+        <input type="text" name="cpf" [(ngModel)]="newClient.cpf" required pattern="[0-9]{11}">
+        <small>{{ (newClient.cpf?.length || 0) }}/11</small>
+      </div>
+    </label>
+    <button type="submit" [disabled]="!clientForm.valid">Salvar</button>
+  </form>
+</div>

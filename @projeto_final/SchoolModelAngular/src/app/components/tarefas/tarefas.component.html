@@ -1,0 +1,8 @@
+<ol>
+  @for (tarefa of listaTarefas; track tarefa) {
+    <li [style.color]="tarefa.concluido ? 'green' : 'orange'"
+    (click)="toggleConcluido(tarefa)">
+      {{tarefa.titulo}} > {{tarefa.descricao}}
+    </li>
+  }
+</ol>
