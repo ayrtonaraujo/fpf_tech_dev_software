@@ -1,0 +1,15 @@
+Receitas
+	Recebidas
+	A Receber
+	Totais
+Despesas
+	Pagas
+	A pagar
+	Totais
+Projeções
+	Gráficos mensais de despesas x receitas
+	Gráfico de projeção para o ano
+Categorias
+	Categorias padrão
+	Usuário pode criar nova categoria?
+	
