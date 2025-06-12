@@ -5,6 +5,7 @@ body {
     padding: 2em
 }
 
+
 nav {
   background-color: #00C0EF;
   border-radius: 1em;
@@ -14,19 +15,28 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 5em;
+  gap: 2em;
   margin: 0 3em;
+  font-size: 1.3em;
 }
 
+nav a .material-symbols-outlined {
+  color: inherit;
+}
 
 nav a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
     padding: 0.8em 1.2em;
     border-radius: 1em;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     background-color: transparent;
+
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
 }
 
 nav a:not(.active-link):hover {

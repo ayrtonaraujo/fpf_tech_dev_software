@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="210mm"
-   height="297mm"
-   viewBox="0 0 210 297"
+   width="69.710823mm"
+   height="17.118357mm"
+   viewBox="0 0 69.710823 17.118357"
    version="1.1"
    id="svg1"
    inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
@@ -23,13 +23,13 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="0.97386896"
-     inkscape:cx="418.43412"
-     inkscape:cy="657.68602"
+     inkscape:zoom="7.7909517"
+     inkscape:cx="156.20685"
+     inkscape:cy="36.388366"
      inkscape:window-width="1920"
-     inkscape:window-height="991"
-     inkscape:window-x="-9"
-     inkscape:window-y="-9"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1" />
   <defs
@@ -37,7 +37,8 @@
   <g
      inkscape:label="Camada 1"
      inkscape:groupmode="layer"
-     id="layer1">
+     id="layer1"
+     transform="translate(-61.837941,-136.78956)">
     <g
        id="g1"
        transform="matrix(1.8338732,0,0,1.8338732,-5.76562,-156.3415)">
@@ -52,5 +53,19 @@
          id="path1"
          sodipodi:nodetypes="cccccccc" />
     </g>
+    <rect
+       style="fill:#292929;fill-opacity:1;stroke-width:0.3"
+       id="rect1"
+       width="1.0806112"
+       height="0.76843464"
+       x="106.43118"
+       y="137.20979" />
+    <rect
+       style="fill:#292929;fill-opacity:1;stroke-width:0.3"
+       id="rect2"
+       width="1.0806112"
+       height="0.76843464"
+       x="106.43118"
+       y="148.4167" />
   </g>
 </svg>

@@ -2,13 +2,19 @@
 
 <form>
     <div>
-        <h2>Faça seu lançamento: </h2>
-      <input type="radio" id="income">
-     <label for="income">Receita</label>
+        <h2>Novo Lançamento</h2>
 
+      <div class = receita_despesa>
+        <div>
+        <input type="radio" id="income">
+        <label for="income">Receita</label>
+        </div>
 
-      <input type="radio" id="income">
-      <label for="outcome">Despesa</label>
+  <div>
+        <input type="radio" id="income">
+        <label for="outcome">Despesa</label>
+      </div>
+      </div>
     </div>
 
      <div>
@@ -21,15 +27,30 @@
     <input type="text" inputmode="decimal" placeholder="0,00" class="value">
     </div>
 
-    <div>
-    <input type="submit" class="submit" value="Adicionar Transação">
-    <input type="reset" value="Limpar">
+  <div>
+    <label for="date"> Data: </label>
+  <input type="date">
+  </div>
+
+  <div>
+    <label for="cars"> Data: </label>
+    <select name="cars">
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="fiat">Fiat</option>
+      <option value="audi">Audi</option>
+    </select>
+  </div>
+
+    <div class="buttons">
+      <input type="submit" class="submit" value="Adicionar">
+      <input type="reset" value="Limpar">
     </div>
 </form>
 
 
 <div id="relatorio">
-    <p>Teste</p>
+    <p>Vai ter um gráfico de barra aqui.</p>
 </div>
 
 </div>

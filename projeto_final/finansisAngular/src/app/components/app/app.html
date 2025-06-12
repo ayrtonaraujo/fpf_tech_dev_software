@@ -1,9 +1,9 @@
-
 <nav>
-    <a [routerLink]="['/home']" routerLinkActive="active-link"> Home </a>
-    <a [routerLink]="['/transacoes']" routerLinkActive="active-link">  Transações </a>
-    <a [routerLink]="['/categorias']" routerLinkActive="active-link"> Categorias </a>
-
+    <a [routerLink]="['/home']" routerLinkActive="active-link"> <span class="material-symbols-outlined">home</span> Página Inicial </a>
+    |
+    <a [routerLink]="['/transacoes']" routerLinkActive="active-link">  <span class="material-symbols-outlined">receipt_long</span> Lançamentos </a>
+    |
+    <a [routerLink]="['/categorias']" routerLinkActive="active-link"> <span class="material-symbols-outlined">category</span> Categorias </a>
 </nav>
 
 <router-outlet></router-outlet>

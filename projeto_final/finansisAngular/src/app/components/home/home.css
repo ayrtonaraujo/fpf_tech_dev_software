@@ -14,6 +14,7 @@ form {
     background-color: #ffffff;
     padding: 2em;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 1em;
 }
 
 #relatorio {
@@ -24,4 +25,17 @@ form {
     background-color: #ffffff;
     padding: 2em;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 1em;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.receita_despesa {
+  display: flex;
+  gap: 1rem;
+  justify-content: center
+;
 }

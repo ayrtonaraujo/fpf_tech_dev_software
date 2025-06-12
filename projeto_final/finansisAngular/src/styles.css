@@ -1,13 +1,12 @@
 body {
   background-color: #f4f4f4;
-
   margin: 2em 5em;
 }
 
 * {
     box-sizing: border-box;
     color: #2f2f2f;
-    font-family: "Noto Sans", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, sans-serif;
+    font-family: "Roboto", "Noto Sans", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, sans-serif;
     font-optical-sizing: auto;
 }
 
