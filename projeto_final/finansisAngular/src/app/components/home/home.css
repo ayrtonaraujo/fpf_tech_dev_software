@@ -1,31 +1,36 @@
 .home {
   display: flex;
-  flex-direction: column;
-  margin:  3em;
-  gap: 2em
+  flex-direction: row;
+  justify-content: center;
+  margin: 2em 3em;
+  gap: 2em;
 }
 
+
+h2 {
+  color: #00C0EF;
+}
 form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffffff;
-    padding: 2em;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 2em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 1em;
 }
 
 #relatorio {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffffff;
-    padding: 2em;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 1em;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 2em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 1em;
 }
 
 .buttons {
@@ -36,6 +41,5 @@ form {
 .receita_despesa {
   display: flex;
   gap: 1rem;
-  justify-content: center
-;
+  justify-content: center;
 }

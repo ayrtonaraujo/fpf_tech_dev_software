@@ -4,10 +4,10 @@ body {
 }
 
 * {
-    box-sizing: border-box;
-    color: #2f2f2f;
-    font-family: "Roboto", "Noto Sans", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, sans-serif;
-    font-optical-sizing: auto;
+  box-sizing: border-box;
+  color: #2f2f2f;
+  font-family: "Roboto", "Noto Sans", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, sans-serif;
+  font-optical-sizing: auto;
 }
 
 .logofinansis {
