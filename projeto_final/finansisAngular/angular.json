@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "projeto_produtos": {
+    "finansisAngular": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -23,12 +23,7 @@
             ],
             "styles": [
               "src/styles.css"
-            ],
-            "server": "src/main.server.ts",
-            "outputMode": "server",
-            "ssr": {
-              "entry": "src/server.ts"
-            }
+            ]
           },
           "configurations": {
             "production": {
@@ -58,10 +53,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "projeto_produtos:build:production"
+              "buildTarget": "finansisAngular:build:production"
             },
             "development": {
-              "buildTarget": "projeto_produtos:build:development"
+              "buildTarget": "finansisAngular:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -88,6 +83,6 @@
     }
   },
   "cli": {
-    "analytics": false
+    "analytics": "f405d1d3-b507-4bf5-ba9d-8fa90510506f"
   }
 }

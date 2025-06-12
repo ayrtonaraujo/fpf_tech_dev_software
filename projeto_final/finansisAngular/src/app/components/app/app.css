@@ -1,0 +1,29 @@
+body {
+    background-color: #E6E6E6;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 2em
+}
+
+nav {
+    background-color: #00C0EF;
+    border-radius: 1em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    font-weight: bold;
+    background-color: aliceblue;
+    color: #00C0EF;
+}

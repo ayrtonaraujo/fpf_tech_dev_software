@@ -1,0 +1,6 @@
+blue: #00C0EF
+green: #25B272
+red: #E16556
+grey: #f4f4f4
+white:#ffffff
+black: #292929
