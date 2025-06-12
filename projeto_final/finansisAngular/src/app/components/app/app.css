@@ -6,24 +6,38 @@ body {
 }
 
 nav {
-    background-color: #00C0EF;
-    border-radius: 1em;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    color: white;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+  background-color: #00C0EF;
+  border-radius: 1em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: white;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5em;
+  margin: 0 3em;
 }
 
 
 nav a {
     color: white;
     text-decoration: none;
+    padding: 0.8em 1.2em;
+    border-radius: 1em;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    background-color: transparent;
 }
 
-nav a:hover {
-    font-weight: bold;
-    background-color: aliceblue;
-    color: #00C0EF;
+nav a:not(.active-link):hover {
+  background-color: aliceblue;
+  color: #00C0EF;
+  font-weight: bold;
+}
+
+nav a.active-link {
+  background-color: white;
+  color: #00C0EF;
+  font-weight: bold;
+  cursor: default; /* Cursor padrão, pois clicar não faz nada */
 }
