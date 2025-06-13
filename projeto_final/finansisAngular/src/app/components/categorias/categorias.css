@@ -1,0 +1,53 @@
+* {
+    background-color: white;
+    border-radius: 1em;
+}
+
+.post_categorias {
+    display: flex;
+    margin: 2em 3em;
+    padding: 2em;
+    gap: 1em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+}
+
+.lista_categorias {
+    padding-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    margin: 2em 3em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 2em 2em 1em;
+}
+
+
+.lista {
+    border: 2px solid rgb(228, 228, 228);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+    align-items: center;
+    padding: 0 2em;
+}
+
+.buttons {
+    gap: 1em;
+    display: flex;
+}
+
+.buttons input {
+    padding: 0.5em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 0px;
+}
+
+#edit {
+    background-color: rgb(179, 255, 230);
+
+}
+
+#delete {
+    background-color: rgb(255, 121, 121);
+}

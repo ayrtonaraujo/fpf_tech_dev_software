@@ -1,5 +1,29 @@
-<ul>
-  @for (categoria of listaCategorias; track categoria) {
-    <li>{{categoria.name}} / {{categoria.color}}</li>
-  }
-</ul>
+<div class="post_categorias">
+  <form>
+    <label for="nome">Nome: </label>
+    <input type="text" id="nome">
+    <input type="submit" class="submit" value='Adicionar'>
+    <input type="reset" class="reset" value='Limpar'>
+  </form>
+</div>
+
+<div class='lista_categorias'>
+  
+    @for (categoria of listaCategorias; track categoria) {
+    
+      <div class="lista">
+      <div class="name_categoria">
+        <p>{{categoria.name}}</p>
+      </div>
+
+      <div class="buttons"> 
+        <div>
+         <input type="submit" id="edit"value="Editar">
+        </div>
+        <div>
+          <input type="submit" id="delete" value="Deletar">
+        </div>
+      </div>
+    </div>
+    }
+</div>
