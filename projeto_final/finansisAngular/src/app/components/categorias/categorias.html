@@ -1,3 +1,5 @@
-<div class="categorias">
-    <p>categorias works!</p>
-</div>
+<ul>
+  @for (categoria of listaCategorias; track categoria) {
+    <li>{{categoria.name}} / {{categoria.color}}</li>
+  }
+</ul>
