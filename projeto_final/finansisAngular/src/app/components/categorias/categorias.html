@@ -1,29 +1,42 @@
 <div class="post_categorias">
   <form>
-    <label for="nome">Nome: </label>
-    <input type="text" id="nome">
-    <input type="submit" class="submit" value='Adicionar'>
-    <input type="reset" class="reset" value='Limpar'>
+    <h2>Cadastrar Categoria</h2>
+    <input type="text" id="nome" placeholder="Escreva aqui.">
+    <div class="buttons">
+      <button type="submit" class="submit btn btn-primary" id="adicionar_categoria">
+        <span class="material-symbols-outlined">add_circle</span>
+
+      </button>
+
+      <button type="reset" class="reset btn btn-secondary" id="limpar_categoria">
+        <span class="material-symbols-outlined">delete</span>
+      </button>
+    </div>
   </form>
 </div>
 
 <div class='lista_categorias'>
-  
-    @for (categoria of listaCategorias; track categoria) {
-    
-      <div class="lista">
-      <div class="name_categoria">
-        <p>{{categoria.name}}</p>
-      </div>
+  <h2>Categorias Cadastradas</h2>
+  @for (categoria of listaCategorias; track categoria) {
 
-      <div class="buttons"> 
-        <div>
-         <input type="submit" id="edit"value="Editar">
-        </div>
-        <div>
-          <input type="submit" id="delete" value="Deletar">
-        </div>
+  <div class="lista">
+    <div class="name_categoria">
+      <p>{{categoria.name}}</p>
+    </div>
+
+    <div class="buttons">
+      <div>
+        <button type="submit" id="edit" class="btn btn-primary">
+          <span class="material-symbols-outlined">edit</span>
+        </button>
+      </div>
+      <div>
+        <button type="button" id="delete" class="btn btn-danger">
+          <span class="material-symbols-outlined">delete</span>
+
+        </button>
       </div>
     </div>
-    }
+  </div>
+  }
 </div>

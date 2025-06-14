@@ -45,3 +45,14 @@ form {
   gap: 1rem;
   justify-content: center;
 }
+
+@media (max-width: 600px) {
+
+  .home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2em 1em;
+  gap: 2em;
+}
+}

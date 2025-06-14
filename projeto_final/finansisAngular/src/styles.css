@@ -1,6 +1,8 @@
 body {
   background-color: #dfdfdf;
-  margin: 2em 5em;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 * {

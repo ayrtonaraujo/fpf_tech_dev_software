@@ -1,27 +1,31 @@
-body {
-    background-color: #E6E6E6;
-    font-size: 16px;
-    line-height: 1.5;
-    padding: 2em;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+  width: 100%;
+}
 
 nav {
-  background-color: #00C0EF;
-  border-radius: 1em;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  color: white;
-  padding: 10px;
+  padding: 10px 30px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 2em;
-  margin: 0 2.4em;
-  font-size: 1.3em;
+  justify-content: space-between;
+  background-color:  #00C0EF;
+  position: relative;
+  height: 70px;
 }
 
-nav a .material-symbols-outlined {
-  color: inherit;
+nav ul {
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li {
+  list-style-type: none;
 }
 
 nav a {
@@ -33,10 +37,13 @@ nav a {
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     background-color: transparent;
-
     display: flex;
     align-items: center;
     gap: 0.5em;
+}
+
+nav a .material-symbols-outlined {
+  color: inherit;
 }
 
 nav a:not(.active-link):hover {
@@ -50,4 +57,61 @@ nav a.active-link {
   color: #00C0EF;
   font-weight: bold;
   cursor: default; /* Cursor padrão, pois clicar não faz nada */
+}
+
+nav img {
+  margin-top: 0.2em;
+  width: 150px;
+}
+
+#menu-icon-side {
+  color: white;
+  font-size: 2em;
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    position: absolute;
+    top:70px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    /* align-content: start; */
+    align-items: center;
+    /* flex-wrap: wrap; */
+    /* justify-content: space-around; */
+    background-color: #00C0EF;
+    gap: 0;
+    /* margin: 0; */
+    overflow: hidden;
+  }
+  
+
+  nav a {
+    /* margin: 0; */
+  }
+
+  nav ul li {
+    padding: 25px;
+    /* margin-bottom: 0; */
+    /* gap: 0; */
+  }
+  
+  .menu-icon {
+    display: block;
+  }
+
+ #menuList {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease-in-out;
+}
+
+#menuList.menu-aberto {
+    max-height: 300px;
+}
 }

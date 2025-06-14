@@ -3,8 +3,14 @@
     border-radius: 1em;
 }
 
+input {
+    padding: 1em;
+    border: 2px solid rgb(214, 214, 214);
+}
+
 .post_categorias {
     display: flex;
+    /* flex-direction: column; */
     margin: 2em 3em;
     padding: 2em;
     gap: 1em;
@@ -12,42 +18,94 @@
     justify-content: center;
 }
 
+.post_categorias form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 1em;
+}
+
+.post_categorias h2 {
+    text-align: center;
+    margin: 0;
+}
+
 .lista_categorias {
+    background-color: transparent;
     padding-bottom: 1em;
     display: flex;
     flex-direction: column;
     margin: 2em 3em;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 2em 2em 1em;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    /* padding: 2em 2em 1em; */
 }
 
 
 .lista {
-    border: 2px solid rgb(228, 228, 228);
+    /* border: 2px solid rgb(228, 228, 228); */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-between;
     margin-bottom: 1em;
     align-items: center;
-    padding: 0 2em;
+    padding: 1em;
 }
 
 .buttons {
-    gap: 1em;
+    gap: 0.5em;
     display: flex;
 }
 
 .buttons input {
-    padding: 0.5em;
+    font-weight: bold;
+    color: white;
+    padding: 0.5em 1em;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border: 0px;
 }
 
-#edit {
-    background-color: rgb(179, 255, 230);
+.lista_categorias h2 {
+    background-color: transparent;
+    text-align: center;
+    margin: 0 0 1em;
+}
 
+#edit {
+    background-color: rgb(0, 207, 138);
 }
 
 #delete {
-    background-color: rgb(255, 121, 121);
+    background-color: rgb(255, 84, 84);
+}
+
+#adicionar_categoria {
+    background-color: rgb(0, 207, 138);
+}
+
+#limpar_categoria {
+    background-color: rgb(150, 150, 150);
+}
+
+@media (max-width: 600px) {
+
+    .post_categorias {
+        margin: 2em 1em;
+        /* gap: 2em; */
+    }
+    .lista_categorias {
+        margin: 2em 1em;
+        /* gap: 2em; */
+    }
+}
+
+.material-symbols-outlined {
+    background-color: transparent;
+    color: white;
+}
+
+button {
+    border: 0;
+    padding: 1em;
 }
