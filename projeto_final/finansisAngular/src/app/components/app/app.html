@@ -4,11 +4,14 @@
     </div>
 
     <ul id="menuList" [class.menu-aberto]="isMenuOpen">
-        <li><a [routerLink]="['/home']" routerLinkActive="active-link"> <span class="material-symbols-outlined">home</span> Página Inicial </a></li>
-        <li><a [routerLink]="['/transacoes']" routerLinkActive="active-link">  <span class="material-symbols-outlined">receipt_long</span> Lançamentos </a></li>
-        <li><a [routerLink]="['/categorias']" routerLinkActive="active-link"> <span class="material-symbols-outlined">category</span> Categorias </a></li>
+        <li><a [routerLink]="['/home']" routerLinkActive="active-link"> <span
+                    class="material-symbols-outlined">home</span> Página Inicial </a></li>
+        <li><a [routerLink]="['/transacoes']" routerLinkActive="active-link"> <span
+                    class="material-symbols-outlined">receipt_long</span> Lançamentos </a></li>
+        <li><a [routerLink]="['/categorias']" routerLinkActive="active-link"> <span
+                    class="material-symbols-outlined">category</span> Categorias </a></li>
     </ul>
-    
+
     <div class="menu-icon">
         <span id="menu-icon-side" (click)="toggleMenu()" class="material-symbols-outlined">menu</span>
     </div>

@@ -21,8 +21,8 @@ select {
 }
 
 .info-principal {
-  display: flex;
-  align-items: stretch;
+    display: flex;
+    align-items: stretch;
 }
 
 .detalhes {
@@ -36,22 +36,22 @@ select {
 .detalhes h3,
 .detalhes h4,
 .detalhes p {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .detalhes .material-symbols-outlined {
-  color: rgb(139, 139, 139);
-  vertical-align: middle;
-  margin-right: 6px;
-  font-size: 1.3em;
+    color: rgb(139, 139, 139);
+    vertical-align: middle;
+    margin-right: 6px;
+    font-size: 1.3em;
 }
 
 .form-edicao .material-symbols-outlined {
-  color: rgb(139, 139, 139);
-  vertical-align: middle;
-  margin-right: 6px;
-  font-size: 1.3em;
+    color: rgb(139, 139, 139);
+    vertical-align: middle;
+    margin-right: 6px;
+    font-size: 1.3em;
 }
 
 .form-edicao h3 {
@@ -183,13 +183,14 @@ button {
     color: rgb(163, 163, 163);
     /* vertical-align: middle; */
 }
+
 .tipo {
-  border-radius: 1em 0 0 1em;
-  display: flex;
-  align-items: center; 
-  justify-content: center;
-  padding: 50px 20px;
-  /* margin-right: 1em; */
+    border-radius: 1em 0 0 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    /* margin-right: 1em; */
 }
 
 .tipo.receita {

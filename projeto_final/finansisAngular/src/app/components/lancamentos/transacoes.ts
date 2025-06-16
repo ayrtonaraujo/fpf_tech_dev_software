@@ -15,19 +15,19 @@ import { CategoriasInterface } from '../../interfaces/categorias.interface';
   styleUrls: ['./transacoes.css']
 })
 export class Transacoes implements OnInit {
-  
+
   private entryService = inject(EntryService);
- 
+
   private categoriasService = inject(CategoriasService);
   private changeDetectorRef = inject(ChangeDetectorRef);
 
   public groupedEntries: { [key: string]: EntryInterface[] } = {};
   public sortedMonthKeys: string[] = [];
-  
+
   public listaEntries: EntryInterface[] = [];
   public listaCategorias: CategoriasInterface[] = [];
 
- 
+
   public editingEntryId: number | null = null;
   public editedEntryData: Partial<EntryInterface> = {};
 
@@ -36,13 +36,13 @@ export class Transacoes implements OnInit {
     this.loadCategories();
   }
 
-  
+
   loadEntries(): void {
-    
+
     this.entryService.getEntry().subscribe({
       next: (entries) => {
         this.listaEntries = entries;
-        this.groupEntriesByMonth(); 
+        this.groupEntriesByMonth();
         this.changeDetectorRef.detectChanges();
       },
       error: (err) => console.error('Erro ao carregar os lançamentos', err)
@@ -77,7 +77,7 @@ export class Transacoes implements OnInit {
     });
   }
 
- 
+
   onDelete(id: number): void {
     if (confirm('Tem certeza que deseja deletar este lançamento?')) {
       this.entryService.deleteEntry(id).subscribe({
@@ -87,7 +87,7 @@ export class Transacoes implements OnInit {
     }
   }
 
-  
+
   onEditClick(entry: EntryInterface): void {
     this.editingEntryId = entry.id!;
     this.editedEntryData = { ...entry };
@@ -104,7 +104,7 @@ export class Transacoes implements OnInit {
       date: this.editedEntryData.date,
       category_id: this.editedEntryData.category
     };
-    
+
     this.entryService.updateEntry(id, payload).subscribe({
       next: () => {
         alert('Salvo com sucesso!');

@@ -25,7 +25,7 @@ input {
   padding: 1em;
   background-color: #f3f3f3;
   border: 0;
-  
+
 
 }
 
@@ -35,7 +35,7 @@ select {
   padding: 1em;
   background-color: #f3f3f3;
   border: 0;
-  
+
 
 }
 
@@ -107,49 +107,49 @@ form {
 }
 
 button {
-    cursor: pointer;
-    border: 0;
-    padding: 1em;
+  cursor: pointer;
+  border: 0;
+  padding: 1em;
 }
 
 .submit_button {
-    background-color: rgb(0, 207, 138);
+  background-color: rgb(0, 207, 138);
 }
 
 .submit_button:hover {
-    background-color:  #00C0EF;
+  background-color: #00C0EF;
 }
 
 
 .reset_button:hover {
-    background-color:  #00C0EF;
+  background-color: #00C0EF;
 }
 
 .reset_button {
-    background-color: rgb(122, 122, 122);
+  background-color: rgb(122, 122, 122);
 }
 
 @media (max-width: 800px) {
 
   .home {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 2em 1em;
-  gap: 2em;
-}
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2em 1em;
+    gap: 2em;
+  }
 
-#relatorio {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  /* justify-content: center; */
-  align-items: center;
-  background-color: #ffffff;
-  padding: 0 0 1em 0 ;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  border-radius: 1em;
-}
+  #relatorio {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    /* justify-content: center; */
+    align-items: center;
+    background-color: #ffffff;
+    padding: 0 0 1em 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 1em;
+  }
 }
 
 
@@ -160,7 +160,7 @@ button {
   padding: 1.5em;
   background-color: #fff;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .grafico-container-css h2 {
@@ -198,9 +198,11 @@ button {
 
 
 .barra-fill.receita {
-  background-color: #28a745; /* Verde */
+  background-color: #28a745;
+  /* Verde */
 }
 
 .barra-fill.despesa {
-  background-color: #dc3545; /* Vermelho */
+  background-color: #dc3545;
+  /* Vermelho */
 }

@@ -9,7 +9,6 @@
           <input type="radio" id="income" name="type" value="I" [(ngModel)]="newEntry.type">
           <label for="income">Receita</label>
         </div>
-
         <div>
           <input type="radio" id="expense" name="type" value="E" [(ngModel)]="newEntry.type">
           <label for="expense">Despesa</label>
@@ -48,17 +47,13 @@
       <button type="submit" class="submit_button">
         <span class="material-symbols-outlined">save</span>
       </button>
-
       <button type="reset" class="reset_button">
         <span class="material-symbols-outlined">restart_alt</span>
-
       </button>
     </div>
   </form>
 
-
   <div id="relatorio">
-
     <h2>Resumo do Mês</h2>
 
     <div class="resumo-linha">
@@ -71,12 +66,10 @@
       <h2 class="valor despesa">{{ totalDespesas | currency:'BRL' }}</h2>
     </div>
 
-
     <div class="resumo-linha">
       <span>Saldo do Mês:</span>
       <h2 class="valor saldo-valor">{{ saldo | currency:'BRL' }}</h2>
     </div>
-
   </div>
 
 </div>

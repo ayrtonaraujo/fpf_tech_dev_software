@@ -72,7 +72,7 @@ export class Categorias implements OnInit {
 
   onSaveClick(id: number): void {
     if (!this.editedCategoryName.trim()) {
-      return; 
+      return;
     }
 
     const updatedCategory = { name: this.editedCategoryName };
@@ -89,6 +89,6 @@ export class Categorias implements OnInit {
   }
 
   onCancelClick(): void {
-    this.editingCategoryId = null; 
+    this.editingCategoryId = null;
   }
 }

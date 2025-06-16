@@ -56,7 +56,7 @@ input {
 .buttons {
     gap: 0.5em;
     display: flex;
-    
+
 }
 
 .lista_categorias h2 {
@@ -72,7 +72,7 @@ input {
 } */
 
 #limpar_categoria:hover {
-    background-color:  #00C0EF;
+    background-color: #00C0EF;
 }
 
 /* .lista_categorias button {
@@ -84,7 +84,7 @@ input {
 }
 
 #edit_button:hover {
-   background-color:  #00C0EF;
+    background-color: #00C0EF;
 }
 
 #delete_button {
@@ -92,7 +92,7 @@ input {
 }
 
 #delete_button:hover {
-   background-color:  #00C0EF;
+    background-color: #00C0EF;
 }
 
 
@@ -101,7 +101,7 @@ input {
 }
 
 #close_button:hover {
-   background-color:  #00C0EF;
+    background-color: #00C0EF;
 }
 
 #edit_button {
@@ -113,15 +113,15 @@ input {
 }
 
 #save_button:hover {
-    background-color:  #00C0EF;
+    background-color: #00C0EF;
 }
 
 #adicionar_categoria:hover {
-    background-color:  #00C0EF;
+    background-color: #00C0EF;
 }
 
 #limpar_categoria:hover {
-    background-color:  #00C0EF;
+    background-color: #00C0EF;
 }
 
 #adicionar_categoria {
@@ -138,6 +138,7 @@ input {
         margin: 2em 1em;
         /* gap: 2em; */
     }
+
     .lista_categorias {
         margin: 2em 1em;
         /* gap: 2em; */
@@ -145,7 +146,7 @@ input {
 }
 
 .material-symbols-outlined {
-    
+
     background-color: transparent;
     color: white;
 }
