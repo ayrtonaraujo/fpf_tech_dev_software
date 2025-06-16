@@ -72,7 +72,7 @@ export class Categorias implements OnInit {
 
   onSaveClick(id: number): void {
     if (!this.editedCategoryName.trim()) {
-      return; // Impede salvar com nome vazio
+      return; 
     }
 
     const updatedCategory = { name: this.editedCategoryName };
@@ -81,7 +81,7 @@ export class Categorias implements OnInit {
       next: () => {
         alert('Categoria atualizada com sucesso!');
         this.editingCategoryId = null;
-        this.loadCategories(); // 
+        this.loadCategories();
       },
       error: (err) => console.error('Erro ao atualizar categoria', err)
     });
@@ -89,6 +89,6 @@ export class Categorias implements OnInit {
   }
 
   onCancelClick(): void {
-    this.editingCategoryId = null; // Apenas sai do modo de edição
+    this.editingCategoryId = null; 
   }
 }
