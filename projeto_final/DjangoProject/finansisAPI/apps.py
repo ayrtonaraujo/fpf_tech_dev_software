@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class ProjectdjangoConfig(AppConfig):
+class FinansisapiConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'projectDjango'
+    name = 'finansisAPI'

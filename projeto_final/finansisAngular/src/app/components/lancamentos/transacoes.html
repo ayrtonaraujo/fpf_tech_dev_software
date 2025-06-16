@@ -1,16 +1,56 @@
 <div class="lista_lancamentos">
-    <div class="lista">
-        <div class="name_categoria">
-            <p>Lançamento</p>
-        </div>
 
-        <div class="buttons">
-            <div>
-                <input type="submit" id="edit" value="Editar">
+  @if (sortedMonthKeys.length > 0) {
+
+    @for (monthKey of sortedMonthKeys; track monthKey) {
+
+      <h2 class="mes-cabecalho"><span class="material-symbols-outlined">
+calendar_month
+</span> {{ monthKey }}</h2>
+
+      @for (entry of groupedEntries[monthKey]; track entry.id) {
+        
+        <div class="lista">
+          @if (editingEntryId !== entry.id) {
+            <div class="info-principal">
+              <div class="tipo" [ngClass]="{'receita': entry.type === 'I', 'despesa': entry.type === 'E'}">
+                @if (entry.type === 'I') { <span class="material-symbols-outlined">trending_up</span> }
+                @else { <span class="material-symbols-outlined">trending_down</span> }
+              </div>
+              <div class="detalhes">
+                <h3>{{ entry.description }}</h3>
+                <h4><span class="material-symbols-outlined">attach_money</span>{{ entry.value | currency:'BRL' }}</h4>
+                <p><span class="material-symbols-outlined">category</span> {{ getCategoryName(entry.category) }}</p>
+                <p><span class="material-symbols-outlined">calendar_month</span> {{ entry.date | date:'dd/MM/yyyy' }}</p>
+              </div>
             </div>
-            <div>
-                <input type="submit" id="delete" value="Deletar">
+            <div class="buttons">
+              <button type="button" id='edit_button' class="btn btn-success" (click)="onEditClick(entry)">
+                <span class="material-symbols-outlined">edit</span>
+              </button>
+              <button type="button" id="delete_button" class="btn btn-danger" (click)="onDelete(entry.id!)">
+                <span class="material-symbols-outlined">delete</span>
+              </button>
             </div>
+          } @else {
+            <div class="form-edicao">
+              </div>
+            <div class="buttons">
+              <button type="button" id='save_button' class="btn btn-success" (click)="onSaveClick(entry.id!)">
+                <span class="material-symbols-outlined">save</span>
+              </button>
+              <button type="button" id="close_button" class="btn btn-secondary" (click)="onCancelClick()">
+                <span class="material-symbols-outlined">close</span>
+              </button>
+            </div>
+          }
         </div>
+      }
+    }
+
+  } @else {
+    <div class="lista-vazia">
+      <p>Nenhum lançamento encontrado</p>
     </div>
+  }
 </div>

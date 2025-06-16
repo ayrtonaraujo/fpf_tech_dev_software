@@ -1,42 +1,52 @@
 <div class="post_categorias">
-  <form>
+  <form (ngSubmit)="onSubmit()">
     <h2>Cadastrar Categoria</h2>
-    <input type="text" id="nome" placeholder="Escreva aqui.">
+
     <div class="buttons">
+      <input type="text" id="nome" placeholder="Escreva aqui." [(ngModel)]="newCategoryName" name="newCategoryName"
+        required>
+
       <button type="submit" class="submit btn btn-primary" id="adicionar_categoria">
         <span class="material-symbols-outlined">add_circle</span>
-
       </button>
 
       <button type="reset" class="reset btn btn-secondary" id="limpar_categoria">
-        <span class="material-symbols-outlined">delete</span>
+        <span class="material-symbols-outlined">restart_alt</span>
       </button>
     </div>
   </form>
 </div>
 
 <div class='lista_categorias'>
-  <h2>Categorias Cadastradas</h2>
-  @for (categoria of listaCategorias; track categoria) {
-
+  @for (categoria of listaCategorias; track categoria.id) {
   <div class="lista">
+
+    @if (editingCategoryId !== categoria.id) {
     <div class="name_categoria">
-      <p>{{categoria.name}}</p>
+      <p>{{ categoria.name }}</p>
     </div>
-
     <div class="buttons">
-      <div>
-        <button type="submit" id="edit" class="btn btn-primary">
-          <span class="material-symbols-outlined">edit</span>
-        </button>
-      </div>
-      <div>
-        <button type="button" id="delete" class="btn btn-danger">
-          <span class="material-symbols-outlined">delete</span>
-
-        </button>
-      </div>
+      <button type="button" id="edit_button" class="btn btn-primary" (click)="onEditClick(categoria)">
+        <span class="material-symbols-outlined">edit</span>
+      </button>
+      <button type="button" id="delete_button" class="btn btn-danger" (click)="onDelete(categoria.id)">
+        <span class="material-symbols-outlined">delete</span>
+      </button>
     </div>
+    } @else {
+    <div class="edit_categoria">
+      <input type="text" [(ngModel)]="editedCategoryName" name="edit-{{categoria.id}}" class="edit-input">
+    </div>
+    <div class="buttons">
+      <button type="button" id="save_button" class="btn btn-success" (click)="onSaveClick(categoria.id)">
+        <span class="material-symbols-outlined">save</span>
+      </button>
+      <button type="button" id="close_button" class="btn btn-secondary" (click)="onCancelClick()">
+        <span class="material-symbols-outlined">close</span>
+      </button>
+    </div>
+    }
+
   </div>
   }
 </div>

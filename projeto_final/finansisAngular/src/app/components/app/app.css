@@ -10,6 +10,7 @@ html, body {
 }
 
 nav {
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
   padding: 10px 30px;
   display: flex;
   align-items: center;
@@ -91,9 +92,9 @@ nav img {
   }
   
 
-  nav a {
-    /* margin: 0; */
-  }
+  /* nav a {
+    margin: 0;
+  } */
 
   nav ul li {
     padding: 25px;

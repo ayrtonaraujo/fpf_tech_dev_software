@@ -4,7 +4,7 @@
 }
 
 input {
-    padding: 1em;
+    padding: 1.2em;
     border: 2px solid rgb(214, 214, 214);
 }
 
@@ -37,7 +37,7 @@ input {
     padding-bottom: 1em;
     display: flex;
     flex-direction: column;
-    margin: 2em 3em;
+    margin: 1em 3em;
     /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
     /* padding: 2em 2em 1em; */
 }
@@ -56,28 +56,72 @@ input {
 .buttons {
     gap: 0.5em;
     display: flex;
-}
-
-.buttons input {
-    font-weight: bold;
-    color: white;
-    padding: 0.5em 1em;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border: 0px;
+    
 }
 
 .lista_categorias h2 {
-    background-color: transparent;
+    background-color: #00C0EF;
     text-align: center;
-    margin: 0 0 1em;
+    color: white;
+    padding: 1em;
+    /* margin: 0 0 0 1em; */
 }
 
-#edit {
+/* #edit {
+    background-color: #00C0EF;
+} */
+
+#limpar_categoria:hover {
+    background-color:  #00C0EF;
+}
+
+/* .lista_categorias button {
+    background-color: rgb(255, 84, 84);
+} */
+
+#okay {
     background-color: rgb(0, 207, 138);
 }
 
-#delete {
+#edit_button:hover {
+   background-color:  #00C0EF;
+}
+
+#delete_button {
     background-color: rgb(255, 84, 84);
+}
+
+#delete_button:hover {
+   background-color:  #00C0EF;
+}
+
+
+#close_button {
+    background-color: rgb(255, 84, 84);
+}
+
+#close_button:hover {
+   background-color:  #00C0EF;
+}
+
+#edit_button {
+    background-color: rgb(0, 207, 138);
+}
+
+#save_button {
+    background-color: rgb(0, 207, 138);
+}
+
+#save_button:hover {
+    background-color:  #00C0EF;
+}
+
+#adicionar_categoria:hover {
+    background-color:  #00C0EF;
+}
+
+#limpar_categoria:hover {
+    background-color:  #00C0EF;
 }
 
 #adicionar_categoria {
@@ -85,10 +129,10 @@ input {
 }
 
 #limpar_categoria {
-    background-color: rgb(150, 150, 150);
+    background-color: rgb(122, 122, 122);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
 
     .post_categorias {
         margin: 2em 1em;
@@ -101,11 +145,13 @@ input {
 }
 
 .material-symbols-outlined {
+    
     background-color: transparent;
     color: white;
 }
 
 button {
+    cursor: pointer;
     border: 0;
     padding: 1em;
 }

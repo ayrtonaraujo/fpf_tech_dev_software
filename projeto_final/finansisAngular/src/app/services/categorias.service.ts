@@ -1,4 +1,6 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 import { CategoriasInterface } from '../interfaces/categorias.interface';
 
 @Injectable({
@@ -6,14 +8,24 @@ import { CategoriasInterface } from '../interfaces/categorias.interface';
 })
 
 export class CategoriasService {
-  getCategorias(): CategoriasInterface[] {
-    return [
-      { name: "Alimentação", color: "#FF6F61" },
-      { name: "Transporte", color: "#6B5B95" },
-      { name: "Educação", color: "#88B04B" },
-      { name: "Lazer", color: "#F7CAC9" },
-      { name: "Saúde", color: "#92A8D1" },
-     { name: "Moradia", color: "#955251" }
-    ]
+
+  private apiUrl = 'http://127.0.0.1:8000/category/'
+
+  constructor(private http: HttpClient) {}
+
+  updateCategory(id: number, categoryData: { name: string }): Observable<CategoriasInterface> {
+    return this.http.put<CategoriasInterface>(`${this.apiUrl}${id}/`, categoryData);
+  }
+
+  getCategorias(): Observable<CategoriasInterface[]> {
+    return this.http.get<CategoriasInterface[]>(this.apiUrl)
   };
+
+  createCategory(categoria: {name: string}): Observable<CategoriasInterface> {
+    return this.http.post<CategoriasInterface>(this.apiUrl, categoria);
+  }
+
+  deleteCategory (id: number): Observable<any> {
+    return this.http.delete(`${this.apiUrl}${id}/`);
+  }
 }

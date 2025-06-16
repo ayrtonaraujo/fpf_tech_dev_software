@@ -1,56 +1,63 @@
 <div class="home">
 
-  <form>
-    <div>
-      <h2>Novo Lançamento</h2>
+  <form (ngSubmit)="onSubmit()">
+  <div>
+    <h2>Novo Lançamento</h2>
 
-      <div class=receita_despesa>
-        <div>
-          <input type="radio" id="income">
-          <label for="income">Receita</label>
-        </div>
+    <div class="receita_despesa">
+      <div>
+        <input type="radio" id="income" name="type" value="I" [(ngModel)]="newEntry.type">
+        <label for="income">Receita</label>
+      </div>
 
-        <div>
-          <input type="radio" id="income">
-          <label for="outcome">Despesa</label>
-        </div>
+      <div>
+        <input type="radio" id="expense" name="type" value="E" [(ngModel)]="newEntry.type">
+        <label for="expense">Despesa</label>
       </div>
     </div>
+  </div>
 
-    <div>
-      <label for="description">Descrição: </label>
-      <input type="text" class="descrition" placeholder="Descreva sua transação">
-    </div>
+  <div>
+    <!-- <label for="description">Descrição: </label> -->
+    <input type="text" id="description" name="description" placeholder="Descreva seu lançamento" [(ngModel)]="newEntry.description" required>
+  </div>
 
-    <div>
-      <label for="value">Valor: </label>
-      <input type="text" inputmode="decimal" placeholder="0,00" class="value">
-    </div>
+  <div>
+    <!-- <label for="value">Valor: </label> -->
+    <input type="text" id="value" name="value" placeholder="R$ 0,00" [(ngModel)]="newEntry.value" required mask="separator.2" thousandSeparator="." decimalMarker="," prefix="R$ ">
+  </div>
 
-    <div>
-      <label for="date"> Data: </label>
-      <input type="date">
-    </div>
+  <div>
+    <!-- <label for="date">Data: </label> -->
+    <input type="date" id="date" name="date" [(ngModel)]="newEntry.date" required>
+  </div>
 
-    <div>
-      <label for="cars"> Categoria: </label>
-      <select name="cars">
-        <option value="volvo">Volvo</option>
-        <option value="saab">Saab</option>
-        <option value="fiat">Fiat</option>
-        <option value="audi">Audi</option>
-      </select>
-    </div>
+  <div class="selecao_categoria">
+    <!-- <label for="category">Categoria: </label> -->
+    <select id="category" name="category" [(ngModel)]="newEntry.category" required>
+      <option value="0" disabled>Selecione uma categoria</option>
+      @for (categoria of listaCategorias; track categoria.id) {
+        <option [value]="categoria.id">{{ categoria.name }}</option>
+      }
+    </select>
+  </div>
 
-    <div class="buttons">
-      <input type="submit" class="submit" value="Adicionar">
-      <input type="reset" value="Limpar">
-    </div>
-  </form>
+  <div class="buttons">
+    <button type="submit" class="submit_button">
+      <span class="material-symbols-outlined">save</span>
+    </button>
+  
+    <button type="reset" class="reset_button">
+      <span class="material-symbols-outlined">restart_alt</span>
+      
+    </button>
+</div>
+</form>
 
 
   <div id="relatorio">
-    <p>Vai ter um gráfico de barra aqui.</p>
+    <h1>Lançamentos: Últimos 30 dias </h1>
+    
   </div>
 
 </div>
