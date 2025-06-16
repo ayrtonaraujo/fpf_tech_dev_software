@@ -33,17 +33,44 @@ calendar_month
               </button>
             </div>
           } @else {
-            <div class="form-edicao">
-              </div>
-            <div class="buttons">
-              <button type="button" id='save_button' class="btn btn-success" (click)="onSaveClick(entry.id!)">
-                <span class="material-symbols-outlined">save</span>
-              </button>
-              <button type="button" id="close_button" class="btn btn-secondary" (click)="onCancelClick()">
-                <span class="material-symbols-outlined">close</span>
-              </button>
-            </div>
-          }
+  <div class="form-edicao">
+    
+    <div class="input-group">
+      <span class="material-symbols-outlined">description</span>
+      <input type="text" [(ngModel)]="editedEntryData.description" name="edit-desc-{{entry.id}}" class="form-control" placeholder="Descrição">
+    </div>
+
+    <div class="input-group">
+      <span class="material-symbols-outlined">attach_money</span>
+      <input type="text" [(ngModel)]="editedEntryData.value" name="edit-value-{{entry.id}}" class="form-control" placeholder="Valor"
+             mask="separator.2" thousandSeparator="." decimalMarker=",">
+    </div>
+
+    <div class="input-group">
+      <span class="material-symbols-outlined">calendar_month</span>
+      <input type="date" [(ngModel)]="editedEntryData.date" name="edit-date-{{entry.id}}" class="form-control">
+    </div>
+
+    <div class="input-group">
+      <span class="material-symbols-outlined">category</span>
+      <select [(ngModel)]="editedEntryData.category" name="edit-cat-{{entry.id}}" class="form-control">
+        @for (cat of listaCategorias; track cat.id) {
+          <option [value]="cat.id">{{cat.name}}</option>
+        }
+      </select>
+    </div>
+
+  </div>
+
+  <div class="buttons">
+    <button type="button" id='save_button' class="btn btn-success" (click)="onSaveClick(entry.id!)">
+      <span class="material-symbols-outlined">save</span>
+    </button>
+    <button type="button" id="close_button" class="btn btn-secondary" (click)="onCancelClick()">
+      <span class="material-symbols-outlined">close</span>
+    </button>
+  </div>
+}
         </div>
       }
     }

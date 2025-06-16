@@ -1,63 +1,82 @@
 <div class="home">
 
   <form (ngSubmit)="onSubmit()">
-  <div>
-    <h2>Novo Lançamento</h2>
+    <div>
+      <h2>Novo Lançamento</h2>
 
-    <div class="receita_despesa">
-      <div>
-        <input type="radio" id="income" name="type" value="I" [(ngModel)]="newEntry.type">
-        <label for="income">Receita</label>
-      </div>
+      <div class="receita_despesa">
+        <div>
+          <input type="radio" id="income" name="type" value="I" [(ngModel)]="newEntry.type">
+          <label for="income">Receita</label>
+        </div>
 
-      <div>
-        <input type="radio" id="expense" name="type" value="E" [(ngModel)]="newEntry.type">
-        <label for="expense">Despesa</label>
+        <div>
+          <input type="radio" id="expense" name="type" value="E" [(ngModel)]="newEntry.type">
+          <label for="expense">Despesa</label>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div>
-    <!-- <label for="description">Descrição: </label> -->
-    <input type="text" id="description" name="description" placeholder="Descreva seu lançamento" [(ngModel)]="newEntry.description" required>
-  </div>
+    <div>
+      <!-- <label for="description">Descrição: </label> -->
+      <input type="text" id="description" name="description" placeholder="Descreva seu lançamento"
+        [(ngModel)]="newEntry.description" required>
+    </div>
 
-  <div>
-    <!-- <label for="value">Valor: </label> -->
-    <input type="text" id="value" name="value" placeholder="R$ 0,00" [(ngModel)]="newEntry.value" required mask="separator.2" thousandSeparator="." decimalMarker="," prefix="R$ ">
-  </div>
+    <div>
+      <!-- <label for="value">Valor: </label> -->
+      <input type="text" id="value" name="value" placeholder="R$ 0,00" [(ngModel)]="newEntry.value" required
+        mask="separator.2" thousandSeparator="." decimalMarker="," prefix="R$ ">
+    </div>
 
-  <div>
-    <!-- <label for="date">Data: </label> -->
-    <input type="date" id="date" name="date" [(ngModel)]="newEntry.date" required>
-  </div>
+    <div>
+      <!-- <label for="date">Data: </label> -->
+      <input type="date" id="date" name="date" [(ngModel)]="newEntry.date" required>
+    </div>
 
-  <div class="selecao_categoria">
-    <!-- <label for="category">Categoria: </label> -->
-    <select id="category" name="category" [(ngModel)]="newEntry.category" required>
-      <option value="0" disabled>Selecione uma categoria</option>
-      @for (categoria of listaCategorias; track categoria.id) {
+    <div class="selecao_categoria">
+      <!-- <label for="category">Categoria: </label> -->
+      <select id="category" name="category" [(ngModel)]="newEntry.category" required>
+        <option value="0" disabled>Selecione uma categoria</option>
+        @for (categoria of listaCategorias; track categoria.id) {
         <option [value]="categoria.id">{{ categoria.name }}</option>
-      }
-    </select>
-  </div>
+        }
+      </select>
+    </div>
 
-  <div class="buttons">
-    <button type="submit" class="submit_button">
-      <span class="material-symbols-outlined">save</span>
-    </button>
-  
-    <button type="reset" class="reset_button">
-      <span class="material-symbols-outlined">restart_alt</span>
-      
-    </button>
-</div>
-</form>
+    <div class="buttons">
+      <button type="submit" class="submit_button">
+        <span class="material-symbols-outlined">save</span>
+      </button>
+
+      <button type="reset" class="reset_button">
+        <span class="material-symbols-outlined">restart_alt</span>
+
+      </button>
+    </div>
+  </form>
 
 
   <div id="relatorio">
-    <h1>Lançamentos: Últimos 30 dias </h1>
-    
+
+    <h2>Resumo do Mês</h2>
+
+    <div class="resumo-linha">
+      <span>Total de Receitas:</span>
+      <h2 class="valor receita">{{ totalReceitas | currency:'BRL' }}</h2>
+    </div>
+
+    <div class="resumo-linha">
+      <span>Total de Despesas:</span>
+      <h2 class="valor despesa">{{ totalDespesas | currency:'BRL' }}</h2>
+    </div>
+
+
+    <div class="resumo-linha">
+      <span>Saldo do Mês:</span>
+      <h2 class="valor saldo-valor">{{ saldo | currency:'BRL' }}</h2>
+    </div>
+
   </div>
 
 </div>

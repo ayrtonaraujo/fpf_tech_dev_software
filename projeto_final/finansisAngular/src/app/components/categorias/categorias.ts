@@ -48,6 +48,7 @@ export class Categorias implements OnInit {
 
     this.CategoriasService.createCategory(novaCategoria).subscribe(
       () => {
+        alert('Categoria criada com sucesso!');
         this.newCategoryName = '';
         this.loadCategories();
       }
@@ -78,6 +79,7 @@ export class Categorias implements OnInit {
 
     this.CategoriasService.updateCategory(id, updatedCategory).subscribe({
       next: () => {
+        alert('Categoria atualizada com sucesso!');
         this.editingCategoryId = null;
         this.loadCategories(); // 
       },
